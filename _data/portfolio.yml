@@ -1,0 +1,47 @@
+- name: HEMOSwimmers
+  category: Scientific Brochure
+  strap: custom code | branding | custom design
+  description: Scientific project at the University of Porto. A bespoke website, detailing research into fluid flow in complex environments. Working remotely with Laura was achieved with Skype and other communication methods.
+  screenshot: deano/home-screenshot.jpg
+  url: https://www.hemoswimmers.madeslowly.xyz/
+  technologies:
+    - icon: sass
+    - icon: html5
+    - icon: js-square
+    - icon: php
+
+- name: Cyclox
+  category: Camapaign Blog
+  strap: wordpress | iconography | blog
+  description: Community camapaign group based in Oxford. The project is built within the Wordpress platform with a bespoke theme and a customised Wordpress installation.
+  screenshot: cyclox/home-screenshot.jpg
+  url: https://www.cyclox.org/
+  technologies:
+    - icon: wordpress
+    - icon: html5
+    - icon: js-square
+    - icon: php
+
+- name: Le Tour de Condor
+  category: Community Blog
+  strap: wordpress | branding | blog
+  description: Wordpress platform for a group to record their efforts while riding the 2019 Tour de France route. Apparently it was quite hard. This project is securley hosted by made slowy.
+  screenshot: letourdecondor/home-screenshot.jpg
+  url: https://www.letourdecondor.co.uk
+  technologies:
+    - icon: wordpress
+    - icon: html5
+    - icon: php
+
+- name: VeloVedic
+  category: Event Booking
+  strap: custom code | branding | e-commerce
+  description: Event booking system. Written within the framework of Bootstrap, with php handling user information, and PayPal API handling secure payment. This project is securley hosted by made slowy.
+  screenshot: velovedic/home-screenshot.jpg
+  url: https://www.velovedic.co.uk
+  technologies:
+    - icon: bootstrap
+    - icon: html5
+    - icon: js-square
+    - icon: php
+    - icon: paypal

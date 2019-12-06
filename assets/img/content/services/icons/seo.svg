@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="500" height="500" viewBox="0, 0, 500, 500">
+  <g id="Background">
+    <rect x="0" y="0" width="500" height="500" fill="#FFFFFF" fill-opacity="0" />
+  </g>
+  <g id="Layer_1">
+    <path d="M470.307,417.012 L381.91,328.615 C377.92,324.625 372.511,322.408 366.837,322.408 L352.385,322.408 C376.856,291.11 391.396,251.744 391.396,208.919 C391.396,107.045 308.851,24.5 206.977,24.5 C105.103,24.5 22.557,107.045 22.557,208.919 C22.557,310.794 105.103,393.339 206.977,393.339 C249.801,393.339 289.168,378.798 320.466,354.327 L320.466,368.779 C320.466,374.454 322.682,379.862 326.672,383.852 L415.07,472.249 C423.404,480.584 436.881,480.584 445.126,472.249 L470.218,447.158 C478.552,438.823 478.552,425.346 470.307,417.012" fill-opacity="0" stroke="#4A50CC" stroke-width="38"/>
+    <text transform="matrix(1, 0, 0, 1, 211.975, 203)">
+      <tspan x="-133.116" y="48" font-family="Chalkboard-Bold" font-size="140" fill="#000000">SEO</tspan>
+    </text>
+  </g>
+</svg>

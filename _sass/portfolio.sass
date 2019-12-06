@@ -1,0 +1,106 @@
+.portfolio-wraper
+  margin: 0
+  background-color: $pure-white-color
+
+.portfolio-panel
+  padding: 5vh 0
+
+.portfolio-item
+  display: flex
+  flex-direction: column
+  min-height: 35vh
+  max-width: 500px
+  overflow: hidden
+  margin: 10vh auto
+  max-width: 600px
+
+.portfolio-image
+  background-size: cover
+  background-position: top
+  height: 40vh
+  transition: all 2s cubic-bezier(.2,.3,0,1)
+
+.portfolio-card-wrapper
+  padding: 0vh 10px 10px 10px
+  z-index: 1
+  background-color: $white-color
+
+.portfolio-card
+  display: flex
+  flex-direction: column
+  background-color: $pure-white-color
+  margin-top: -5vh
+  box-shadow: 0 6px 16px rgba(0,0,0,.2)
+  padding: 2rem 1rem
+  border-radius: 5px
+  transition: all 2s cubic-bezier(.2,.3,0,1)
+
+.portfolio-title
+  margin: 0 0 5px 10px
+  padding: 0
+  color: $vivid-blue-color
+
+.portfolio-strap
+  display: none
+  padding: 0
+  margin: 0 0 10px 0
+
+.portfolio-description
+  min-height: 100%
+  font-size: 1rem
+  margin-top: auto
+  margin-bottom: auto
+  color: $soft-black-color
+
+.portfolio-technologies
+  display: flex
+  justify-content: flex-end
+  position: relative
+  li
+    list-style: none
+    padding-left: 1rem
+    color: rgb(120, 149, 215)
+
+@media screen and ( min-width : 576px )
+  .portfolio-strap
+    display: block
+    color: $vivid-blue-color
+
+// dont hover on phones
+@media screen and ( min-width : 768px )
+  .portfolio-item
+    max-width: 700px
+    flex-direction: row
+  .portfolio-card
+    padding: 2rem
+
+  .portfolio-item:hover
+    .portfolio-image
+      transform: scale(1.2)
+    .portfolio-card
+      transform: translateX(-10px)
+
+  .portfolio-image
+    min-width: 50%
+    height: auto
+    border: none
+    border-radius: 0
+
+  .portfolio-card-wrapper
+    width: 50%
+    padding: 5vh 5vh 5vh 0
+  .portfolio-card
+    margin-top: 0
+    margin-left: -5vh
+  .portfolio-title
+    color: $black-color
+  .portfolio-description
+    font-weight: $heavy-font
+
+@media screen and ( min-width : 1024px )
+  .portfolio-item
+    max-width: 900px
+
+@media screen and ( min-width : 1220px )
+  .portfolio-item
+    max-width: 1100px

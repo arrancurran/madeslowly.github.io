@@ -1,0 +1,44 @@
+# Web Design
+- name: Web Design
+  description: Your idea deserves more than a template. Get the website that was developed to meet your requirments.
+  icon: web-design.svg
+
+# Mobile First Design
+- name: Mobile First
+  description: Mobile & accessible first is the inclusive practise of ensuring a fluid & functional website for all your viewers.
+  icon: mobile-first.svg
+
+# Digital Branding
+- name: Digital Branding
+  description: Get a beautiful website with custom logos, bespoke iconography and carefully designed layouts.
+  icon: digital-branding.svg
+
+# Social Media
+- name: Social Media
+  description: Integrate your social media channels into your new website to enrich your users experience.
+  icon: social-media.svg
+
+# WordPress Builds
+- name: WordPress Builds
+  description: Blog your way into infamy. Keep your content upto date with a custom WordPress installation.
+  icon: wordpress-builds.svg
+
+# Jekyll Builds
+- name: Jekyll Builds
+  description: Not looking for a heavy hitter like WordPress? A Jekyll build is the lightweight, blog aware solution.
+  icon: jekyll-builds.svg
+
+# Domain Setup
+- name: Domain Setup
+  description: Don't know your DNS from your IPS? Leave the techy stuff to me, whilst you come up with a cool name.
+  icon: domain-setup.svg
+
+# Secure Hosting
+- name: Secure Hosting
+  description: Your website needs a cosy home. Secure hosting, plenty of space, and support for all that mumbo jumbo code 'n stuff.
+  icon: secure-hosting.svg
+
+# SEO
+- name: SEO
+  description: Search engine optimisation is a conversation between your website and the worlds search engines. Leave that to the nerds, so you can get on with talking to your community.
+  icon: seo.svg

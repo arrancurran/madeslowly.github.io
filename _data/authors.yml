@@ -1,0 +1,8 @@
+# Collate all content authors here. The primary website author is set in _config.yml
+arran:
+  name: Arran Curran
+  site:
+  avatar:
+  bio: "Hi, I am Arran, the author of Made Slowly, the theme you're currently previewing. I hope you like it!"
+  email: arran@madeslowly.co.uk
+  twitter: https://twitter.com/arrancurran

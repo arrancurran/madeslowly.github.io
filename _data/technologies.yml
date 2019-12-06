@@ -1,0 +1,23 @@
+- name: Wordpress
+  icon: wordpress
+  alt: Popular CMS
+- name: Bootstrap
+  icon: bootstrap
+  alt: CSS annd JS library from Twitter
+- name: HTML
+  icon: html5
+  alt: The code that builds web
+- name: CSS3
+  icon: css3
+  alt: The code that styles the web
+- name: Sass
+  icon: sass
+  alt: CSS with superpowers
+- name: JavaScript
+  icon: js-square
+  alt: The code that manipulates the web
+- name: PhP
+  icon: php
+  alt: The code you never see
+#- name: python
+#  icon: python

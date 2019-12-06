@@ -1,0 +1,37 @@
+<nav>
+  <div class="nav-brand">
+    <a href="{{ site.baseurl }}{{ '/' }}">
+    {{ site.title | upcase }}
+    </a>
+    <a class="nav-socials" id="twitter" href="{{ site.twitter.link }}">
+    <i class="fab fa-{{ site.twitter.icon }}" title="Made Slowly Twitter account"></i>
+    </a>
+    <a class="nav-socials" id="facebook" href="{{ site.facebook.link }}">
+    <i class="fab fa-{{ site.facebook.icon }}" title="Made Slowly Facebook account"></i>
+    </a>
+  </div>
+
+  <ul class="nav-links">
+    {% for item in site.data.menu %} {% if item.menu == 1 %}
+    <a href="{{ baseurl }}{{ item.link }}">
+    <li class="navlink-border">
+    {{ item.name }}
+    </li>
+    </a>
+    {% endif %} {% endfor %}
+    <li>
+    <a class="mob-socials" href="{{ site.twitter.link }}">
+    <i class="fab fa-{{ site.twitter.icon }}" title="Made Slowly Twitter account"></i>
+    </a>
+    <a class="mob-socials" href="{{ site.facebook.link }}">
+    <i class="fab fa-{{ site.facebook.icon }}" title="Made Slowly Facebook account"></i>
+    </a>
+    </li>
+  </ul>
+
+  <div class="burger">
+    <div class="burger-line-1"></div>
+    <div class="burger-line-2"></div>
+    <div class="burger-line-3"></div>
+  </div>
+</nav>

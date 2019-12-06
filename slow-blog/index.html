@@ -1,0 +1,44 @@
+---
+layout: default
+title: Slowly Blogging
+description: Slowly blogging the latest projects, and tips to help you develop and design an awesome website.
+scripts: type-delete-effect
+thumbnail:
+---
+
+<!-- page for all posts -->
+
+<section class="blog-masthead">
+
+<h1 class="blog-header">
+  {{ page.title }}
+</h1>
+
+<p class="blog-strap">
+a slow blog about
+<a href="" class="typewrite" data-period="1000"
+data-type='[
+  {% assign n = site.categories | size %}
+  {% for category in site.categories %}
+  "{{ category[0] }}"
+  {% if n != forloop.index %}
+  ,
+  {% endif %}
+  {% endfor %} ]'>
+  <span class="wrap"></span>
+</a>
+</p>
+
+</section>
+
+<div class="blog-wrapper">
+
+  {% for post in paginator.posts %}
+
+  {% include list-post-items.html %}
+
+  {% endfor %}
+
+  {% include paginator.html %}
+
+</div>

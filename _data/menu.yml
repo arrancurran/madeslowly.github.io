@@ -1,0 +1,35 @@
+# Main menu
+- name:      Home
+  link:      /#
+  menu:      1
+  local:     1
+- name:      Services
+  link:      /#services
+  menu:      1
+  local:     1
+- name:      Projects
+  link:      /#projects
+  menu:      1
+  local:     1
+- name:      Slow Blog
+  link:      /slow-blog/
+  menu:      1
+  local:     1
+#- name:      Live Chat
+#  link:      https://www.tidio.com/talk/ji7yxlzcqgtp6z8bhmlrhnbaptyu84x7
+#  menu:      1
+#  local:     0
+
+- name:      Contact
+  link:      /contact
+  menu:      1
+  local:     1
+# Secondary level menu items
+- name:      Privacy
+  link:      /privacy-policy
+  menu:      2
+  local:     1
+#- name:      Terms
+#  link:      /terms
+#  menu:      2
+#  local:     1

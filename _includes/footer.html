@@ -1,0 +1,45 @@
+  <!-- footer -->
+  <footer class="footer-wraper global-container">
+    <div class="footer-grid">
+
+<!-- site descrition, taken from _config.yml.author.description -->
+
+      <div class="footer-bragging">
+
+      <p>{{ site.author.description }}</p>
+
+      <ul class="technologies">
+      {% for item in site.data.technologies %}
+      <li><i
+      class="fab fa-{{ item.icon }} fa-2x"
+      title="{{ item.alt }}"></i></li>
+      {% endfor %}
+      </ul>
+
+      </div>
+
+<!-- quick contact form -->
+
+      <div class="footer-contact">
+      {% include quick-contact.html %}
+      </div>
+
+<!-- footer base, links and copyright -->
+
+      <div class="footer-base">
+
+      <ul class="footer-links">
+      {% for item in site.data.menu %}
+      {% if item.local == 1 %}
+      <li><a
+      href="{{ site.baseurl }}{{ item.link }}">
+      {{ item.name }}
+      </a></li>
+      {% endif %}
+      {% endfor %}
+      </ul>
+      <p class="copyright">&copy; <script>document.write(new Date().getFullYear())</script> made slowly</p>
+      </div>
+
+    </div>
+  </footer>

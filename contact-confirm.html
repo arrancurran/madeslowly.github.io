@@ -1,0 +1,23 @@
+---
+layout: default
+title: Message Sent
+description: Your message has been successfully sent.
+permalink: /contact-confirm/
+sitemap: false
+---
+<section class="contact-masthead">
+  <h1 class="contact-header"><span>{{ page.title }}</span></h1>
+</section>
+
+<div class="blog-wrapper">
+  <p class="contact-confirm">
+  Your message has been sent<span> to {{ site.author.email }}</span>. <span>You should receive an automated confirmation very soon. </span>I will personally respond soon.</p>
+
+  <h2 style="width:100%;text-align:center">While you wait</h2>
+
+  {% for post in site.posts limit: 2 %}
+
+  {% include list-post-items.html %}
+
+  {% endfor %}
+</div>

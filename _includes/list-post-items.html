@@ -1,0 +1,41 @@
+<!-- display for each post -->
+
+<div class="post-preview-wrapper">
+
+<div
+class="post-preview-img"
+style="background-image: url('{{ site.baseurl }}{{ post.background }}');"></div>
+
+<div class="post-preview-text">
+
+<a href="{{ site.baseurl }}{{ post.url }}" class="post-preview-title">
+
+  <h2>{{ post.title }}</h2>
+
+  <h3>{{ post.subtitle }}</h3>
+
+</a>
+
+<p class="post-preview-meta">
+{{ post.date | date: '%B %d, %Y' }}
+</p>
+
+<ul class="post-preview-meta">
+  {% assign n = post.categories | size | minus:1 %}
+  {% assign p = post.categories | sort %}
+
+  {% for categories in p %}
+
+  <li>
+    {% assign i = forloop.index | minus:1 %}
+    <a href="{{ site.baseurl }}/slow-blog/categories/{{ post.categories[ i ] | replace: ' ', '-' }}">
+    {{ post.categories[ i ] }}
+    {% if n != i %} | {% endif %}
+    </a>
+  </li>
+
+  {% endfor %}
+</ul>
+
+</div>
+</div>
