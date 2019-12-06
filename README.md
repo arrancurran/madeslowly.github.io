@@ -1,8 +1,6 @@
 
 A Jekyll built website for Made Slowly
 
-![made slowly creator](assets/img/content/aboutme_large.png)
-
 ## Structure
 
 ```yaml
