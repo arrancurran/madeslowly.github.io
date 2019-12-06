@@ -1,5 +1,5 @@
 
-A Jekyll built website for Made Slowly
+A Jekyll build for Made Slowly
 
 ## Structure
 
