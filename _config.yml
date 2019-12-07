@@ -77,6 +77,7 @@ plugins_dir: ./_plugins
 
 exclude:
   - notes.md
+  - README.md
   - Gemfile
   - assets/dev
 
