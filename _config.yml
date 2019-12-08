@@ -73,15 +73,6 @@ facebook:
 
 # Build settings
 
-sass:
-  load_paths:
-    - _sass
-    - node_modules
-
-exclude: []
-
-plugins_dir: ./_plugins
-
 exclude:
   - notes.md
   - README.md
