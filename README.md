@@ -1,6 +1,6 @@
 A Jekyll build for Made Slowly
 
-## Structure
+### Structure
 
 ```yaml
 _data:
@@ -12,7 +12,7 @@ _data:
   - technologies
 ```
 
-## Style Guide
+# Style Guide
 
 # Heading 1
 ## Heading 2
@@ -20,3 +20,5 @@ _data:
 #### Heading 4
 ##### Heading 5
 ###### Heading 6
+
+This is a paragraph

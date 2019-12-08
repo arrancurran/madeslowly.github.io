@@ -18,7 +18,7 @@ a:hover
 nav, footer
   z-index: 1
 
-/** Reset some basic elements */
+/* Reset some basic elements */
 body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure
   margin: 0
   padding: 0
@@ -40,18 +40,6 @@ button, .btn
 button
   cursor: pointer
 
-// dont hover on phones
-@media screen and ( min-width : 768px )
-  .btn-pop:hover
-    @include btn-animation
-    box-shadow: $box-shadow-hover
-    //color: inherit
-    // Id like to automatically add the shadow color depending on the button color
-
-  .btn-color-swoosh:hover
-    @include btn-animation
-    box-shadow: $box-shadow-hover
-
 .btn-solid
   border: 0
 
@@ -60,16 +48,16 @@ button
   border: solid 1px
 
 .btn-yellow
-  background-color: $yellow-color
-  color: $blue-color
+  background-color: $yellow
+  color: $blue
 
 .btn-pink
-  background-color: $vivid-pink-color
-  color: $white-color
+  background-color: $vivid-pink
+  color: $white
 
 .btn-white
-  background-color: $pure-white-color
-  color: $soft-black-color
+  background-color: $pure-white
+  color: $soft-black
 
 .global-container
   padding: $container-margin-768
@@ -77,16 +65,6 @@ button
 
 .display-desktop-only
     display: none
-
-@media screen and ( min-width : 768px )
-
-  .global-container
-    padding: $container-margin-1024
-
-@media screen and ( min-width : 1280px )
-
-  .display-desktop-only
-    display: inherit
 
 .spacer
   min-height: 20vh

@@ -1,7 +1,7 @@
-// these are for nav.js to get our sass color vars and change onscroll
+// this is for nav.js to get our sass color vars and change onscroll
+// we can control the responsive behaviour of the nav color with breakpoints
 \:root
-  --desktop-nav-bg-var: #{$desktop-nav-bg}
-  --mobile-nav-bg-var: #{$black-color}
+  --nav-bg-var: #{$nav-bg}
 
 nav
   display: flex
@@ -12,7 +12,7 @@ nav
   top: 0
   width: 100%
   height: 10vh
-  color: $white-color
+  color: $white
   // transition for onscroll background color change
   transition: 0.6s ease-in
   z-index: 9999
@@ -22,123 +22,74 @@ nav
   font-size: 1.25rem
   padding-left: $container-margin-x
 
-.nav-socials
-  padding: 0 0 0 1.2rem
-  color: $soft-white-color
-  font-size: 1.1rem
-  transition: 0.2s ease-in
-
-.nav-socials#twitter:hover
-  color: $twitter-blue
-
-.nav-socials#facebook:hover
-  color: $facebook-blue
-
-.nav-links
-  padding-right: $container-margin-x
-  display: flex
-  font-size: 1.125rem
-  text-decoration: none
+.nav-menu
+  position: absolute
+  right: 0
+  top: 0
+  margin: 0
+  width: 95vw
+  height: 90vh
+  border-bottom-left-radius: 80px
+  padding: 10vh 0 0 5vw
+  background-color: $nav-bg
+  z-index: -1
   list-style: none
-  a, .mob-socials
-    // we need a better way of spacing out the links
-    margin-left: 2rem
-    // transition for when we hover over a link and fade out the others
-    transition: 0.2s ease-in-out
-.burger
+  font-size: 1.3rem
+  // transition for the whole slider
+  transform: translateX(100%)
+  transition: transform 0.4s ease-in
+
+.nav-socials
   display: none
+
+.nav-active
+  // we toggle this class in mobile-nav-slider.js on burger click
+  transform: translateX(0%)
+
+.nav-link
+  opacity: 0
+  margin: 6vh 15vw
 
 .mob-socials
-  display: none
-  color: $soft-white-color
+  margin-right: 0
 
-@media screen and ( min-width : 1024px )
-  // assume touch so dont bother looding these
-  .nav-socials,.nav-links:hover > a
-    opacity: 0.5
-  .nav-socials,.nav-links:hover > a:hover
-    opacity: 1
+.burger
+  padding-right: $container-margin-x
+  display: block
+  cursor: pointer
 
-@media screen and ( max-width : 1023px )
-  .nav-links
-    position: absolute
-    right: 0
-    top: 0
-    margin: 0
-    padding: 0
-    width: 95vw
-    height: 80vh
-    flex-direction: column
-    align-self: baseline
-    border-bottom-left-radius: 80px
-    padding: 20vh 0 0 5vw
-    background-color: $black-color
-    color: $white-color
-    z-index: -1
-    // transition for the whole slider
-    transform: translateX(100%)
-    transition: transform 0.4s ease-in
+.burger-line-1, .burger-line-2, .burger-line-3
+  background-color: $white
+  width: 25px
+  height: 1px
+  margin: 7px
 
-  .nav-socials
-    display: none
+.burger-line-1
+  transition: all 0.6s ease-in-out
 
-  .nav-active
-    // we toggle this class in mobile-nav-slider.js on burger click
-    transform: translateX(0%)
+.burger-line-2
+  transition: all 0.3s ease-in-out
+  // delay on closing
+  transition-delay: 0.3s
 
-  .nav-links li
-    opacity: 0
-    vertical-align: top
-    padding-bottom: 1vh
-    margin-bottom: 6vh
-
-    a
-      margin: 0
-      padding: 0
-
-  .navlink-border
-    //border-bottom: 1px solid rgb(130, 130, 130)
-
-  .mob-socials
-    display: inline
-
-  .burger
-    padding-right: $container-margin-x
-    display: block
-    cursor: pointer
-
-  .burger-line-1, .burger-line-2, .burger-line-3
-    background-color: $white-color
-    width: 25px
-    height: 1px
-    margin: 7px
-
+.toggle
   .burger-line-1
-    transition: all 0.6s ease-in-out
+    width: 8px
+    // reduce by 17 px
 
+.toggle
   .burger-line-2
-    transition: all 0.3s ease-in-out
-    // delay on closing
-    transition-delay: 0.3s
+    width: 17px
+    // reduce by 8 px
+    // no delay on opening
+    transition-delay: 0s
 
-  .toggle
-    .burger-line-1
-      width: 8px
-      // reduce by 17 px
-
-  .toggle
-    .burger-line-2
-      width: 17px
-      // reduce by 8 px
-      // no delay on opening
-      transition-delay: 0s
-
-  // animation for the links as the slider opens
-  @keyframes navLinksFade
-    // the timings for this are set in mobile-nav-slider.js
-    from
-      opacity: 0
-      transform: translateY(20px)
-    to
-      opacity: 1
-      transform: translateY(0)
+// animation for the links as the slider opens
+@keyframes navLinksFade
+  // the timings for this are set in mobile-nav-slider.js
+  from
+    opacity: 0
+    transform: translateY(20px)
+  to
+    opacity: 1
+    transform: translateY(0)
