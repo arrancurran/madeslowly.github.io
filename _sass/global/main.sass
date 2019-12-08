@@ -1,10 +1,9 @@
+
 html
   scroll-behavior: smooth
   font-size: $global-font-size
 
 body
-  margin: 0
-  padding: 0
   box-sizing: border-box
   overflow-x: hidden
 
@@ -19,9 +18,10 @@ a:hover
 nav, footer
   z-index: 1
 
-p,h1,h2,h3,h4,h5,h6
+/** Reset some basic elements */
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure
+  margin: 0
   padding: 0
-  //margin: 0
 
 button, .btn
   // some 'buttons' are actually hyperlinks styled to look like buttons, for the purpose of readers. So we always class as .btn btn-*

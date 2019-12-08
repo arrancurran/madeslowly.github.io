@@ -1,58 +1,30 @@
-$primary-font-family: 'Poppins'
-$global-font-size: 16px
-$sm-global-font-size: 14px
-$global-letter-spacing: 1px
-$extra-light-font: 100
-$light-font: 200
-$medium-font: 300
-$heavy-font: 600
-$small-font: 0.8rem
+// Global typography styles
 
 body
   font-family: $primary-font-family , Fallback, sans-serif
-  font-weight: $light-font
+  font-size: $global-font-size
   letter-spacing: $global-letter-spacing
-
 h1
   font-size: 1.9rem
   letter-spacing: 2px
   line-height: 3rem
   font-weight: $extra-light-font
+  padding: 1em 0
 h2
   font-size: 1.6rem
+  padding: 1em 0
 h3
   font-size: 1.3rem
-  //letter-spacing: 3px
+  padding: 1em 0
 h4
   font-size: 1rem
-  //font-weight: $heavy-font
+  padding: 1em 0
+h5
+  padding: 1em 0
+h6
+  padding: 1em 0
+p
+  padding: 1em 0
 
-p,h2,h3,h5,h6
+a,p,h2,h3,h4,h5,h6
   font-weight: $light-font
-
-@media screen and ( min-width : 576px )
-  h1
-    font-size: 2.4rem
-    letter-spacing: 3px
-    line-height: 3rem
-  h2
-    font-size: 1.6rem
-  h3
-    font-size: 1.3rem
-    //letter-spacing: 3px
-  h4
-    font-size: 1rem
-    font-weight: $heavy-font
-
-@media screen and ( min-width : 768px )
-  h1
-    font-size: 3.2rem
-    letter-spacing: 3px
-    line-height: 4rem
-  h2
-
-  h3
-
-  h4
-    font-size: 1rem
-    font-weight: $heavy-font

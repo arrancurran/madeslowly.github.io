@@ -2,11 +2,15 @@
 ---
 $baseurl: "{{ site.baseurl }}"
 
+@import "constants/typography"
+@import "constants/colors"
+@import "constants/dimensions"
+
 @import "mixins/animations"
-@import "global/dimensions"
-@import "global/typography"
-@import "global/colors"
+
 @import "global/main"
+
+@import "global/typography"
 @import "global/nav"
 @import "global/footer"
 @import "landing"
@@ -17,3 +21,5 @@ $baseurl: "{{ site.baseurl }}"
 @import "privacy"
 @import "404"
 @import "global/aos-overrides"
+
+@import "breakpoints/typography"
