@@ -8,6 +8,8 @@ $baseurl: "{{ site.baseurl }}"
 
 @import "mixins/animations"
 
+@import "global/custom-aos"
+
 @import "global/main"
 
 @import "global/typography"
@@ -20,9 +22,10 @@ $baseurl: "{{ site.baseurl }}"
 @import "blog"
 @import "privacy"
 @import "404"
-@import "global/aos-overrides"
 
 @import "breakpoints/typography"
 @import "breakpoints/structures"
 @import "breakpoints/animations"
 @import "breakpoints/nav"
+
+@import "global/aos-overrides"
