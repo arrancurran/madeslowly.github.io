@@ -75,6 +75,7 @@ facebook:
 
 exclude:
   - notes.md
+  - README.md
   - Gemfile
   - assets/dev
 
