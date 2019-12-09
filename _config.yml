@@ -78,6 +78,7 @@ exclude:
   - README.md
   - Gemfile
   - assets/dev
+  - node_modules
 
 markdown: kramdown
 paginate: 6
@@ -93,7 +94,6 @@ plugins:
 
 google_maps_javascript_api_key: AIzaSyDJ0v-xNx91cNouNclVsaVkLqywtydoI5U
 
-
 defaults:
   -
     scope:
@@ -103,6 +103,9 @@ defaults:
 
 sass:
   style: compressed
+  load_paths:
+        - _sass
+        - node_modules
 
 compress_html:
   ignore:

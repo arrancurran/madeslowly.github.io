@@ -6,3 +6,4 @@ _site/
 .htaccess
 /assets/dev
 notes.md
+node_modules

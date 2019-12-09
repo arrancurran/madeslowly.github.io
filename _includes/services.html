@@ -31,7 +31,28 @@
 
 <div class="service-panel">
   <div class="service-panel-img">
-    <img class="" src="{{ site.baseurl }}assets/img/content/services/services-panel-bg.png" alt="little workers building a website on a laptop">
+    <picture>
+      <source
+        media="
+        (min-width: 1280px)"
+        srcset="
+        {{ site.baseurl }}assets/img/content/services/services-panel-bg-1280.png">
+      <source
+        media="
+        (min-width: 1024px)"
+        srcset="
+        {{ site.baseurl }}assets/img/content/services/services-panel-bg-1024.png">
+      <source
+        media="
+        (min-width: 768px)"
+        srcset="
+        {{ site.baseurl }}assets/img/content/services/services-panel-bg-768.png">
+        <img
+        src="
+          {{ site.baseurl }}assets/img/content/services/services-panel-bg-320.png"
+        alt="
+          little workers building a website on a laptop">
+    </picture>
   </div>
   <div class="service-buttons">
     <div
