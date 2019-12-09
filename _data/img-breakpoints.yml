@@ -1,0 +1,20 @@
+# Breakpoint used for img srcsets
+# <picture>
+# {% for item in site.data.img-breakpoints %}
+#  <source
+#    media="
+#    (min-width: {{ item }}px)"
+#    srcset="
+#    {{ site.baseurl }}assets/img/content/services/services-panel-bg-{{ item }}.png">
+# {% endfor %}
+#    <img
+#    class=""
+#    src="
+#      {{ site.baseurl }}FILENAME-320.png"
+#    alt="
+#      little workers building a website on a laptop">
+# </picture>
+
+- 1280
+- 1024
+- 768
