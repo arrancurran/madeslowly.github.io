@@ -1,4 +1,3 @@
-
 html
   scroll-behavior: smooth
   font-size: $global-font-size
@@ -22,6 +21,12 @@ nav, footer
 body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure
   margin: 0
   padding: 0
+
+::placeholder
+  color: $black
+  font-family: $primary-font-family
+
+/* BUTTONS */
 
 button, .btn
   // some 'buttons' are actually hyperlinks styled to look like buttons, for the purpose of readers. So we always class as .btn btn-*
@@ -58,22 +63,3 @@ button
 .btn-white
   background-color: $pure-white
   color: $soft-black
-
-.global-container
-  padding: $container-margin-768
-  margin: 0
-
-.display-desktop-only
-    display: none
-
-.spacer
-  min-height: 20vh
-  background-color: inherit
-
-.center-header, .center-strap
-  text-align: center
-
-.center-header
-  padding: 0
-  margin: 0
-  text-transform: uppercase

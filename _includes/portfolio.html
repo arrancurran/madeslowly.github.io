@@ -1,13 +1,15 @@
 <!-- portfolio  -->
-<section class="global-container portfolio-wraper">
-
+<section class=" portfolio-wraper">
+{% if page.url == "/" %}
 <h1 class="center-header" style="border-bottom: solid 1px black">Projects in the Wild</h1>
 
 <h2 class="center-strap">Currently live and roaming the internet</h2>
 
+{% endif %}
+
 <div class="portfolio-panel">
   {% for item in site.data.portfolio %}
-  <a href="{{ item.url }}" aria-label="test">
+  <a href="{{ item.url }}" aria-label="">
   <div class="portfolio-item" data-aos="fade-in">
 
   <div class="portfolio-image"

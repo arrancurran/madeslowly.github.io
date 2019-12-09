@@ -12,7 +12,7 @@ description: Freelance web developer, based in Oxford, providing an all-in-one s
 #   title = title | site.title
 #   description = page.description
 
-baseurl: ""
+baseurl: "/"
 
 url: "https://www.madeslowly.co.uk"
 

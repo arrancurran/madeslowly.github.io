@@ -28,7 +28,7 @@ style="background-image: url('{{ site.baseurl }}{{ post.background }}');"></div>
 
   <li>
     {% assign i = forloop.index | minus:1 %}
-    <a href="{{ site.baseurl }}/slow-blog/categories/{{ post.categories[ i ] | replace: ' ', '-' }}">
+    <a href="{{site.baseurl}}slow-blog/categories/{{ post.categories[ i ] | replace: ' ', '-' }}">
     {{ post.categories[ i ] }}
     {% if n != i %} | {% endif %}
     </a>

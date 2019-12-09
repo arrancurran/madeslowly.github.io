@@ -5,16 +5,18 @@ description: Your message has been successfully sent.
 permalink: /contact-confirm/
 sitemap: false
 ---
-<section class="contact-masthead">
-  <h1 class="contact-header"><span>{{ page.title }}</span></h1>
+<section class="contact-masthead global-masthead">
+  <h1>{{ page.title }}</h1>
 </section>
 
-<div class="blog-wrapper">
+<div class="">
   <p class="contact-confirm">
   Your message has been sent<span> to {{ site.author.email }}</span>. <span>You should receive an automated confirmation very soon. </span>I will personally respond soon.</p>
 
-  <h2 style="width:100%;text-align:center">While you wait</h2>
+  <h1 class="center-header">While you wait</h1>
+</div>
 
+<div class="blog-wrapper ">
   {% for post in site.posts limit: 2 %}
 
   {% include list-post-items.html %}

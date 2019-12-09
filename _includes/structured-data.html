@@ -16,7 +16,7 @@
     "description": "{{ site.description }}",
     "telephone": "{{ site.phone }}",
     "openingHours": "{{ site.opening_hours }}",
-    "image": "{{ site.url }}{{ site.baseurl }}/assets/img/page-thumbs/{{ site.thumbnail }}"
+    "image": "{{ site.url }}{{site.baseurl}}assets/img/page-thumbs/{{ site.thumbnail }}"
   } </script>
 
 <!-- WebSite -->
@@ -36,14 +36,14 @@
       {% endfor %} ],
     "name": "{{ site.title }} | {{ site.subtitle }}",
     "description": "{{ site.description }}",
-    "image": "{{ site.url }}{{ site.baseurl }}/assets/img/page-thumbs/{{ site.thumbnail }}",
+    "image": "{{ site.url }}{{site.baseurl}}assets/img/page-thumbs/{{ site.thumbnail }}",
     "author":[ {
       /* Person */
       "@type": "Person",
       "@context": "http://schema.org",
       "name": "{{ site.author.name }}",
       "description": "{{ site.author.description }}",
-      "image": "{{ site.url }}{{ site.baseurl }}/assets/img/page-thumbs/{{ site.thumbnail }}"} ]
+      "image": "{{ site.url }}{{site.baseurl}}assets/img/page-thumbs/{{ site.thumbnail }}"} ]
      } , {
     /* WePage */
     /* var */
@@ -66,8 +66,8 @@
   /*only applies to registered business
   "legalName": "{{ site.title }}", */
   "description": "{{ site.description }}",
-  "image": "{{ site.url }}{{ site.baseurl }}/assets/img/page-thumbs/{{ site.thumbnail }}",
-  "logo": "{{ site.url }}{{ site.baseurl }}/{{ site.logo }}",
+  "image": "{{ site.url }}{{site.baseurl}}assets/img/page-thumbs/{{ site.thumbnail }}",
+  "logo": "{{ site.url }}{{site.baseurl}}{{ site.logo }}",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "{{ site.postal_add.street }}",
