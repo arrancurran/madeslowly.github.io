@@ -3,7 +3,7 @@ layout: default
 ---
 <!-- single post layout -->
 
-<section class="blog-masthead global-masthead"  style="background-image: url('{{ site.baseurl }}{{ page.background }}');"></section>
+<section class="blog-masthead global-masthead"  style="background-image: url('{{ site.baseurl }}/{{ page.background }}');"></section>
 
 <div class="post-preview-text">
 
@@ -23,7 +23,7 @@ layout: default
 
   <li>
     {% assign i = forloop.index | minus:1 %}
-    <a href="{{site.baseurl}}slow-blog/categories/{{ page.categories[ i ] | replace: ' ', '-' }}">
+    <a href="{{ site.baseurl }}/slow-blog/categories/{{ page.categories[ i ] | replace: ' ', '-' }}">
     {{ page.categories[ i ] }}
     {% if n != i %} | {% endif %}
     </a>

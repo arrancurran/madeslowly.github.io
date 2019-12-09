@@ -18,7 +18,7 @@
 
   <div class="service {% if item.name == 'Domain Setup' %} display-desktop-only {% endif %}">
 
-    <img class="service-icon" src="{{site.baseurl}}assets/img/content/services/icons/{{ item.icon }}" alt="{{ item.name }} icon">
+    <img class="service-icon" src="{{ site.baseurl }}/assets/img/content/services/icons/{{ item.icon }}" alt="{{ item.name }} icon">
 
     <h3 class="service-title">{{ item.name }}</h3>
 
@@ -37,13 +37,13 @@
       media="
       (min-width: {{ item }}px)"
       srcset="
-      {{ site.baseurl }}assets/img/content/services/services-panel-bg-{{ item }}.png">
+      {{ site.baseurl }}/assets/img/content/services/services-panel-bg-{{ item }}.png">
       {% endfor %}
 
       <img
       class="service-cto-img"
       src="
-      {{ site.baseurl }}assets/img/content/services/services-panel-bg-320.png"
+      {{ site.baseurl }}/assets/img/content/services/services-panel-bg-320.png"
       alt="
       little workers building a website on a laptop">
     </picture>

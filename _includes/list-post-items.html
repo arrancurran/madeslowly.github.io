@@ -4,11 +4,11 @@
 
 <div
 class="post-preview-img"
-style="background-image: url('{{ site.baseurl }}{{ post.background }}');"></div>
+style="background-image: url('{{ site.baseurl }}/{{ post.background }}');"></div>
 
 <div class="post-preview-text">
 
-<a href="{{ site.baseurl }}{{ post.url }}" class="post-preview-title">
+<a href="{{ site.baseurl }}/{{ post.url }}" class="post-preview-title">
 
   <h2>{{ post.title }}</h2>
 
@@ -28,7 +28,7 @@ style="background-image: url('{{ site.baseurl }}{{ post.background }}');"></div>
 
   <li>
     {% assign i = forloop.index | minus:1 %}
-    <a href="{{site.baseurl}}slow-blog/categories/{{ post.categories[ i ] | replace: ' ', '-' }}">
+    <a href="{{ site.baseurl }}/slow-blog/categories/{{ post.categories[ i ] | replace: ' ', '-' }}">
     {{ post.categories[ i ] }}
     {% if n != i %} | {% endif %}
     </a>

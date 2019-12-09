@@ -5,12 +5,12 @@
 #    media="
 #    (min-width: {{ item }}px)"
 #    srcset="
-#    {{ site.baseurl }}assets/img/content/services/services-panel-bg-{{ item }}.png">
+#    {{ site.baseurl }}/assets/img/content/services/services-panel-bg-{{ item }}.png">
 # {% endfor %}
 #    <img
 #    class=""
 #    src="
-#      {{ site.baseurl }}FILENAME-320.png"
+#      {{ site.baseurl }}/FILENAME-320.png"
 #    alt="
 #      little workers building a website on a laptop">
 # </picture>
