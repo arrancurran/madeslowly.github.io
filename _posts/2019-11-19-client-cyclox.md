@@ -5,7 +5,7 @@ title:  "New website for Cyclox"
 subtitle: "Blogging website"
 date:   2019-11-19
 # This is the image used in the post lists
-background: '/assets/img/posts/cyclox.org.jpg'
+background: 'assets/img/posts/cyclox.org.jpg'
 # Image for post header
 screenshot: 'home-screenshot.jpg'
 

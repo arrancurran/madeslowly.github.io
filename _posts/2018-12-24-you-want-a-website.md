@@ -4,7 +4,7 @@ categories: [advice, web design ]
 title: "You want a website"
 subtitle: "So what do you need?"
 date: 2018-12-24
-background: '/assets/img/posts/so-you-want-a-website.jpg'
+background: 'assets/img/posts/so-you-want-a-website.jpg'
 description: So many people don't even know where to start when looking for a new website. This is a helpful guide on what to consider before setting off.
 overview:
 
