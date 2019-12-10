@@ -13,7 +13,7 @@
 
   <ul class="nav-menu">
     <hr class="nav-menu-topbar">
-    {% for item in site.data.menu %} {% if item.menu == 1 %}
+    {% for item in site.data.menu %} {% if item.navbar == 1 %}
     <a href="{{ baseurl }}{{ item.link }}">
     <li class="nav-link">
     {{ item.name }}

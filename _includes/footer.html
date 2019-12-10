@@ -6,16 +6,50 @@
 
       <div class="footer-bragging">
 
+        <div class="">
+          <a href="{{ site.baseurl }}/">
+          <h3>{{ site.title | upcase }} IN OXFORD</h3>
+          </a>
+        </div>
+
+        <div class="footer-nav-lists">
+
+        <ul class="sitemap">
+          <h4>Links</h4>
+          {% for item in site.data.menu %}
+          {% if item.sitemap == 1 %}
+          <li><a
+          href="{{ site.baseurl }}{{ item.link }}">
+          {{ item.name }}
+          </a></li>
+          {% endif %}
+          {% endfor %}
+          </ul>
+
+          <!-- list posts in page.catogory -->
+
+          <ul class="sitemap">
+            <h4>Categories</h4>
+            {% for category in site.categories %}
+            <li><a
+            href="{{ site.baseurl }}/slow-blog/categories/{{ category[0] | replace: ' ', '-' }}">
+            {{ category[0] }}
+            </a></li>
+            {% endfor %}
+</ul>
+
+        <!--
       <p>{{ site.author.description }}</p>
 
-      <ul class="technologies">
+      <ul class="sitemap">
       {% for item in site.data.technologies %}
       <li><i
       class="fab fa-{{ item.icon }} fa-2x"
       title="{{ item.alt }}"></i></li>
       {% endfor %}
       </ul>
-
+      -->
+</div>
       </div>
 
 <!-- quick contact form -->
@@ -30,12 +64,10 @@
 
       <ul class="footer-links">
       {% for item in site.data.menu %}
-      {% if item.local == 1 %}
       <li><a
       href="{{ site.baseurl }}{{ item.link }}">
       {{ item.name }}
       </a></li>
-      {% endif %}
       {% endfor %}
       </ul>
       <p class="copyright">&copy; <script>document.write(new Date().getFullYear())</script> made slowly</p>
