@@ -34,10 +34,10 @@ colors:
 font: Mavern Pro
 ---
 
-#### Overview
+# Overview
 
 Community campaign group based in Oxford. The project is built within a Wordpress platform with a bespoke theme and a customised Wordpress installation.
 
-#### Techy stuff
+# Techy stuff
 
 Custom Wordpress website using a mixture of publicly available theme, Fury and a bespoke child theme. The client already owned a Wordpress website which contained a large amount of content. The new site was structure with a mixture of static pages and blog pages making content readily accessible to viewers and easily managed by the client.
