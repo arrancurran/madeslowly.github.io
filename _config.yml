@@ -79,6 +79,7 @@ exclude:
   - Gemfile
   - assets/dev
   - node_modules
+  - package-lock.json
 
 markdown: kramdown
 paginate: 6
