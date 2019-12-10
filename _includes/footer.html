@@ -32,7 +32,7 @@
       {% for item in site.data.menu %}
       {% if item.local == 1 %}
       <li><a
-      href="{{ site.baseurl }}/{{ item.link }}">
+      href="{{ site.baseurl }}{{ item.link }}">
       {{ item.name }}
       </a></li>
       {% endif %}

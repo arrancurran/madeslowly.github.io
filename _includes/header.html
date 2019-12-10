@@ -74,7 +74,7 @@
   <!-- to implement this we need some kind of db recording the descriptors of our thumbs -->
   <meta property="og:image:alt" content="" />
 
-  <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}/{{ page.url }}" />
+  <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
 
   <meta name="og:description" content="{% if page.description == null %} {{ site.description }}
   {% else %} {{ page.description }} {% endif %}" />
@@ -88,7 +88,7 @@
 
 <!-- *** END OG *** -->
 
-  <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}/{{ page.url }}" />
+  <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
 
   <link rel="stylesheet" type="text/css" title="made slowly has all the style" href="{{ site.baseurl }}/assets/css/made-slowly-has-all-the-style.css" media="screen" />
 
@@ -101,7 +101,7 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/fonts/fontawesome-free-5.11.2-web/css/all.min.css" media="none" onload="if(media!='all')media='all'" / >
 
-  <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/{{ site.favicon }}">
+  <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}{{ site.favicon }}">
 
   {% if jekyll.environment == "production" %}
   {% include tracking-header.html %}

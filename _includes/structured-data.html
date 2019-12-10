@@ -48,8 +48,8 @@
     /* WePage */
     /* var */
     "@type":"WebPage",
-    "@id":"{{ site.url }}{{ site.baseurl }}/{{ page.url }}#webpage",
-    "url":"{{ site.url }}{{ site.baseurl }}/{{ page.url }}",
+    "@id":"{{ site.url }}{{ site.baseurl }}{{ page.url }}#webpage",
+    "url":"{{ site.url }}{{ site.baseurl }}{{ page.url }}",
     "inLanguage":"en-GB",
     "name":"{% if page.url == '/' %} {{ site.title }} | {{ site.subtitle }} {% else %} {{ page.title }} | {{ site.title }} {% endif %}",
     "description": "{% if page.url == '/' %} {{ site.descrition }}{% else %}{{ page.description }}{% endif %}",
@@ -67,7 +67,7 @@
   "legalName": "{{ site.title }}", */
   "description": "{{ site.description }}",
   "image": "{{ site.url }}{{ site.baseurl }}/assets/img/page-thumbs/{{ site.thumbnail }}",
-  "logo": "{{ site.url }}{{ site.baseurl }}/{{ site.logo }}",
+  "logo": "{{ site.url }}{{ site.baseurl }}{{ site.logo }}",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "{{ site.postal_add.street }}",
