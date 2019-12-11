@@ -11,9 +11,9 @@
     - icon: php
 
 - name: Cyclox
-  category: Camapaign Blog
+  category: Campaign Blog
   strap: wordpress | iconography | blog
-  description: Community camapaign group based in Oxford. The project is built within the Wordpress platform with a bespoke theme and a customised Wordpress installation.
+  description: Community campaign group based in Oxford. The project is built within the Wordpress platform with a bespoke theme and a customised Wordpress installation.
   screenshot: cyclox/home-screenshot.jpg
   url: https://www.cyclox.org/
   technologies:
