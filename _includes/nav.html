@@ -1,7 +1,10 @@
 <nav>
   <div class="nav-brand">
     <a href="{{ site.baseurl }}/">
-    {{ site.title | upcase }}
+    <!--
+      {{ site.title | upcase }}
+    -->
+    {% include site-logo.svg %}
     </a>
     <a class="nav-socials" id="twitter" href="{{ site.twitter.link }}">
     <i class="fab fa-{{ site.twitter.icon }}" title="Made Slowly Twitter account"></i>

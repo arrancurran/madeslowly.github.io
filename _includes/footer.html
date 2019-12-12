@@ -3,7 +3,7 @@
 
 <div class="footer-header">
   <a href="{{ site.baseurl }}/">
-  <h2>{{ site.title | upcase }} in {{ site.postal_add.city }}</h2></a>
+  <h2>{% include site-logo.svg %} in {{ site.postal_add.city }}</h2></a>
 </div>
 
 <ul class="footer-nav-links sitemap">
@@ -20,9 +20,12 @@
 <ul class="footer-nav-links category-links">
   <h3>Categories</h3>
   {% for category in site.categories %}
+  {% assign p = category[1].size %}
+  {% if p > 0 %}
   <li><a href="{{ site.baseurl }}/slow-blog/categories/{{ category[0] | replace: ' ', '-' }}">
   {{ category[0] }}
   </a></li>
+  {% endif %}
   {% endfor %}
 </ul>
 
