@@ -20,12 +20,9 @@
 <ul class="footer-nav-links category-links">
   <h3>Categories</h3>
   {% for category in site.categories %}
-  {% assign p = category[1].size %}
-  {% if p > 0 %}
-  <li><a href="{{ site.baseurl }}/slow-blog/categories/{{ category[0] | replace: ' ', '-' }}">
-  {{ category[0] }}
+  <li><a href="{{ site.baseurl }}/slow-blog/categories/#{{ category[0] | slugify }}">
+  {{ category[0] | upcase }}
   </a></li>
-  {% endif %}
   {% endfor %}
 </ul>
 

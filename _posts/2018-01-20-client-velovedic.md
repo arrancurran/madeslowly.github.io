@@ -1,6 +1,6 @@
 ---
 layout: case-study
-categories: [clients, web design, web apps ]
+categories: [ web design ]
 title:  New website for VeloVedic
 subtitle: Event booking website
 description: Clean, fast loading site to show case upcoming events with a backend database for customer bookings and payments. The site is designed to receive, present and store user input with a server database. A payment system based on the PayPal API allows user to complete bookings whilst never leaving the site. The site was developed using HTML, CSS, JavaScript and PhP.

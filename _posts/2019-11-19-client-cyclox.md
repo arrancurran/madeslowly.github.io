@@ -1,6 +1,6 @@
 ---
 layout: case-study
-categories: [clients, web design, wordpress ]
+categories: [ web design, wordpress ]
 title:  "New website for Cyclox"
 subtitle: "Blogging website"
 date:   2019-11-19

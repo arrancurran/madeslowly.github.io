@@ -30,7 +30,7 @@
   navbar:   0
   sitemap:  1
 
-#- name:    Terms
-#  link:    /terms/
-#  navbar:  0
-#  sitemap:  1
+- name:    Terms
+  link:    /terms-of-service/
+  navbar:  0
+  sitemap:  1

@@ -1,9 +1,5 @@
-
-<svg
-  class="site-logo"
-  x="0" y="0"
-  >
-  <text class="nav-brand-text" y="1.25rem" >MADE</text>
-  <text class="nav-brand-text" x="85" y="1.25rem" >SLOWLY</text>
-  <circle class="nav-brand-circle" cx="75" cy="0.82rem" r="3" />
+MADE
+<svg class="site-logo" x="0" y="0" >
+<circle class="nav-brand-circle" cx="3" cy="12" r="3" />
 </svg>
+SLOWLY
