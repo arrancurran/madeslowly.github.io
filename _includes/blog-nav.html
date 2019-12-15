@@ -5,8 +5,9 @@
       <li class="blog-nav-link {% if page.url == '/slow-blog/' %} blog-nav-link-active {% endif %}"><a href="{{ site.baseurl }}/slow-blog/">
       SLOW BLOG
       </a></li>
-    {% for category in site.categories %}
-    <li class="blog-nav-link {% if category[0] == category_name %} blog-nav-link-active {% endif %}"><a href="{{ site.baseurl }}/slow-blog/categories/#{{ category[0] | slugify }}"> 
+    {% assign p = site.categories | sort  %}
+    {% for category in p %}
+    <li class="blog-nav-link {% if category[0] == category_name or category[0] == page.categories[0] %} blog-nav-link-active {% endif %}"><a href="{{ site.baseurl }}/slow-blog/categories/#{{ category[0] | slugify }}">
     {{ category[0] | upcase }}
     </a></li>
     {% endfor %}
