@@ -6,11 +6,6 @@ var a = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 var navColor = getComputedStyle(document.documentElement)
     .getPropertyValue('--nav-bg-var')
 
-// load nav color if reloading and pageYOffset != 0
-window.onload = function() { navBarScroll() };
-
-window.onscroll = function() { navBarScroll() };
-
 function navBarScroll() {
   var currentScrollPos = window.pageYOffset;
   if (window.pageYOffset != 0) {
@@ -21,3 +16,8 @@ function navBarScroll() {
     //navbar.style.color = "black";
   }
 }
+
+// load nav color if reloading and pageYOffset != 0
+window.onload = function() { navBarScroll() };
+
+window.onscroll = function() { navBarScroll() };

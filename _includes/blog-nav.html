@@ -1,10 +1,15 @@
+<!-- navigation unique to blog pages with url /slow-blog/* -->
 
 <div class="blog-nav-container">
-    <ul class="blog-nav center-text">
+  <button class="dropbtn" onclick="displayItem('dropdown{{ category_name | upcase | remove : ' ' }}')">Categories
+    <i class="fa fa-caret-down"></i>
+  </button>
 
-      <li class="blog-nav-link {% if page.url == '/slow-blog/' %} blog-nav-link-active {% endif %}"><a href="{{ site.baseurl }}/slow-blog/">
-      SLOW BLOG
-      </a></li>
+  <div class="dropdown-content display-none" id="dropdown{{ category_name | upcase | remove : ' ' }}">
+    <ul class="blog-nav center-text">
+    <li class="blog-nav-link {% if page.url == '/slow-blog/' %} blog-nav-link-active {% endif %}"><a href="{{ site.baseurl }}/slow-blog/">
+    SLOW BLOG
+    </a></li>
     {% assign p = site.categories | sort  %}
     {% for category in p %}
     <li class="blog-nav-link {% if category[0] == category_name or category[0] == page.categories[0] %} blog-nav-link-active {% endif %}"><a href="{{ site.baseurl }}/slow-blog/categories/#{{ category[0] | slugify }}">
@@ -12,4 +17,5 @@
     </a></li>
     {% endfor %}
     </ul>
+  </div>
 </div>
