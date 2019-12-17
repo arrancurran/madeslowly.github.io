@@ -1,5 +1,5 @@
 ! function(e, t) {
-  "object" == typeof exports && "object" == typeof module ? module.exports = t() : "function" == typeof define && define.amd ? define([], t) : "object" == typeof exports ? exports.AOS = t() : e.AOS = t()
+  "object" == typeof exports && "object" == typeof module ? module.exports = t(): "function" == typeof define && define.amd ? define([], t): "object" == typeof exports ? exports.AOS = t(): e.AOS = t()
 }(this, function() {
   return function(e) {
     function t(o) {
@@ -17,7 +17,7 @@
     "use strict";
 
     function o(e) {
-      return e && e.__esModule ? e : {
+      return e && e.__esModule ? e: {
         default: e
       }
     }
@@ -75,9 +75,9 @@
       _ = function(e) {
         x = i(x, e), w = (0, h.default)();
         var t = document.all && !window.atob;
-        return S(x.disable) || t ? M() : (x.disableMutationObserver || d.default.isSupported() || (console.info('\n      aos: MutationObserver is not supported on this browser,\n      code mutations observing has been disabled.\n      You may have to call "refreshHard()" by yourself.\n    '), x.disableMutationObserver = !0), document.querySelector("body").setAttribute("data-aos-easing", x.easing), document.querySelector("body").setAttribute("data-aos-duration", x.duration), document.querySelector("body").setAttribute("data-aos-delay", x.delay), "DOMContentLoaded" === x.startEvent && ["complete", "interactive"].indexOf(document.readyState) > -1 ? j(!0) : "load" === x.startEvent ? window.addEventListener(x.startEvent, function() {
+        return S(x.disable) || t ? M(): (x.disableMutationObserver || d.default.isSupported() || (console.info('\n      aos: MutationObserver is not supported on this browser,\n      code mutations observing has been disabled.\n      You may have to call "refreshHard()" by yourself.\n    '), x.disableMutationObserver = !0), document.querySelector("body").setAttribute("data-aos-easing", x.easing), document.querySelector("body").setAttribute("data-aos-duration", x.duration), document.querySelector("body").setAttribute("data-aos-delay", x.delay), "DOMContentLoaded" === x.startEvent && ["complete", "interactive"].indexOf(document.readyState) > -1 ? j(!0): "load" === x.startEvent ? window.addEventListener(x.startEvent, function() {
           j(!0)
-        }) : document.addEventListener(x.startEvent, function() {
+        }): document.addEventListener(x.startEvent, function() {
           j(!0)
         }), window.addEventListener("resize", (0, s.default)(j, x.debounceDelay, !0)), window.addEventListener("orientationchange", (0, s.default)(j, x.debounceDelay, !0)), window.addEventListener("scroll", (0, u.default)(function() {
           (0, b.default)(w, x.once)
@@ -100,14 +100,14 @@
         }
 
         function r(e) {
-          return k = e, h = setTimeout(f, t), M ? o(e) : g
+          return k = e, h = setTimeout(f, t), M ? o(e): g
         }
 
         function a(e) {
           var n = e - w,
             o = e - k,
             i = t - n;
-          return S ? j(i, y - o) : i
+          return S ? j(i, y - o): i
         }
 
         function c(e) {
@@ -118,11 +118,11 @@
 
         function f() {
           var e = O();
-          return c(e) ? d(e) : void(h = setTimeout(f, a(e)))
+          return c(e) ? d(e): void(h = setTimeout(f, a(e)))
         }
 
         function d(e) {
-          return h = void 0, _ && b ? o(e) : (b = v = void 0, g)
+          return h = void 0, _ && b ? o(e): (b = v = void 0, g)
         }
 
         function l() {
@@ -130,7 +130,7 @@
         }
 
         function p() {
-          return void 0 === h ? g : d(O())
+          return void 0 === h ? g: d(O())
         }
 
         function m() {
@@ -147,14 +147,14 @@
           S = !1,
           _ = !0;
         if ("function" != typeof e) throw new TypeError(s);
-        return t = u(t) || 0, i(n) && (M = !!n.leading, S = "maxWait" in n, y = S ? x(u(n.maxWait) || 0, t) : y, _ = "trailing" in n ? !!n.trailing : _), m.cancel = l, m.flush = p, m
+        return t = u(t) || 0, i(n) && (M = !!n.leading, S = "maxWait" in n, y = S ? x(u(n.maxWait) || 0, t): y, _ = "trailing" in n ? !!n.trailing: _), m.cancel = l, m.flush = p, m
       }
 
       function o(e, t, o) {
         var r = !0,
           a = !0;
         if ("function" != typeof e) throw new TypeError(s);
-        return i(o) && (r = "leading" in o ? !!o.leading : r, a = "trailing" in o ? !!o.trailing : a), n(e, t, {
+        return i(o) && (r = "leading" in o ? !!o.leading: r, a = "trailing" in o ? !!o.trailing: a), n(e, t, {
           leading: r,
           maxWait: t,
           trailing: a
@@ -162,34 +162,34 @@
       }
 
       function i(e) {
-        var t = "undefined" == typeof e ? "undefined" : c(e);
+        var t = "undefined" == typeof e ? "undefined": c(e);
         return !!e && ("object" == t || "function" == t)
       }
 
       function r(e) {
-        return !!e && "object" == ("undefined" == typeof e ? "undefined" : c(e))
+        return !!e && "object" == ("undefined" == typeof e ? "undefined": c(e))
       }
 
       function a(e) {
-        return "symbol" == ("undefined" == typeof e ? "undefined" : c(e)) || r(e) && k.call(e) == d
+        return "symbol" == ("undefined" == typeof e ? "undefined": c(e)) || r(e) && k.call(e) == d
       }
 
       function u(e) {
         if ("number" == typeof e) return e;
         if (a(e)) return f;
         if (i(e)) {
-          var t = "function" == typeof e.valueOf ? e.valueOf() : e;
-          e = i(t) ? t + "" : t
+          var t = "function" == typeof e.valueOf ? e.valueOf(): e;
+          e = i(t) ? t + "": t
         }
-        if ("string" != typeof e) return 0 === e ? e : +e;
+        if ("string" != typeof e) return 0 === e ? e: +e;
         e = e.replace(l, "");
         var n = m.test(e);
-        return n || b.test(e) ? v(e.slice(2), n ? 2 : 8) : p.test(e) ? f : +e
+        return n || b.test(e) ? v(e.slice(2), n ? 2: 8): p.test(e) ? f: +e
       }
       var c = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
           return typeof e
-        } : function(e) {
-          return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
+        }: function(e) {
+          return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol": typeof e
         },
         s = "Expected a function",
         f = NaN,
@@ -199,8 +199,8 @@
         m = /^0b[01]+$/i,
         b = /^0o[0-7]+$/i,
         v = parseInt,
-        y = "object" == ("undefined" == typeof t ? "undefined" : c(t)) && t && t.Object === Object && t,
-        g = "object" == ("undefined" == typeof self ? "undefined" : c(self)) && self && self.Object === Object && self,
+        y = "object" == ("undefined" == typeof t ? "undefined": c(t)) && t && t.Object === Object && t,
+        g = "object" == ("undefined" == typeof self ? "undefined": c(self)) && self && self.Object === Object && self,
         h = y || g || Function("return this")(),
         w = Object.prototype,
         k = w.toString,
@@ -225,14 +225,14 @@
         }
 
         function r(e) {
-          return O = e, h = setTimeout(f, t), M ? i(e) : g
+          return O = e, h = setTimeout(f, t), M ? i(e): g
         }
 
         function u(e) {
           var n = e - w,
             o = e - O,
             i = t - n;
-          return S ? x(i, y - o) : i
+          return S ? x(i, y - o): i
         }
 
         function s(e) {
@@ -243,11 +243,11 @@
 
         function f() {
           var e = j();
-          return s(e) ? d(e) : void(h = setTimeout(f, u(e)))
+          return s(e) ? d(e): void(h = setTimeout(f, u(e)))
         }
 
         function d(e) {
-          return h = void 0, _ && b ? i(e) : (b = v = void 0, g)
+          return h = void 0, _ && b ? i(e): (b = v = void 0, g)
         }
 
         function l() {
@@ -255,7 +255,7 @@
         }
 
         function p() {
-          return void 0 === h ? g : d(j())
+          return void 0 === h ? g: d(j())
         }
 
         function m() {
@@ -272,38 +272,38 @@
           S = !1,
           _ = !0;
         if ("function" != typeof e) throw new TypeError(c);
-        return t = a(t) || 0, o(n) && (M = !!n.leading, S = "maxWait" in n, y = S ? k(a(n.maxWait) || 0, t) : y, _ = "trailing" in n ? !!n.trailing : _), m.cancel = l, m.flush = p, m
+        return t = a(t) || 0, o(n) && (M = !!n.leading, S = "maxWait" in n, y = S ? k(a(n.maxWait) || 0, t): y, _ = "trailing" in n ? !!n.trailing: _), m.cancel = l, m.flush = p, m
       }
 
       function o(e) {
-        var t = "undefined" == typeof e ? "undefined" : u(e);
+        var t = "undefined" == typeof e ? "undefined": u(e);
         return !!e && ("object" == t || "function" == t)
       }
 
       function i(e) {
-        return !!e && "object" == ("undefined" == typeof e ? "undefined" : u(e))
+        return !!e && "object" == ("undefined" == typeof e ? "undefined": u(e))
       }
 
       function r(e) {
-        return "symbol" == ("undefined" == typeof e ? "undefined" : u(e)) || i(e) && w.call(e) == f
+        return "symbol" == ("undefined" == typeof e ? "undefined": u(e)) || i(e) && w.call(e) == f
       }
 
       function a(e) {
         if ("number" == typeof e) return e;
         if (r(e)) return s;
         if (o(e)) {
-          var t = "function" == typeof e.valueOf ? e.valueOf() : e;
-          e = o(t) ? t + "" : t
+          var t = "function" == typeof e.valueOf ? e.valueOf(): e;
+          e = o(t) ? t + "": t
         }
-        if ("string" != typeof e) return 0 === e ? e : +e;
+        if ("string" != typeof e) return 0 === e ? e: +e;
         e = e.replace(d, "");
         var n = p.test(e);
-        return n || m.test(e) ? b(e.slice(2), n ? 2 : 8) : l.test(e) ? s : +e
+        return n || m.test(e) ? b(e.slice(2), n ? 2: 8): l.test(e) ? s: +e
       }
       var u = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
           return typeof e
-        } : function(e) {
-          return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
+        }: function(e) {
+          return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol": typeof e
         },
         c = "Expected a function",
         s = NaN,
@@ -313,8 +313,8 @@
         p = /^0b[01]+$/i,
         m = /^0o[0-7]+$/i,
         b = parseInt,
-        v = "object" == ("undefined" == typeof t ? "undefined" : u(t)) && t && t.Object === Object && t,
-        y = "object" == ("undefined" == typeof self ? "undefined" : u(self)) && self && self.Object === Object && self,
+        v = "object" == ("undefined" == typeof t ? "undefined": u(t)) && t && t.Object === Object && t,
+        y = "object" == ("undefined" == typeof self ? "undefined": u(self)) && self && self.Object === Object && self,
         g = v || y || Function("return this")(),
         h = Object.prototype,
         w = h.toString,
@@ -435,7 +435,7 @@
     });
     var n = function(e, t, n) {
         var o = e.node.getAttribute("data-aos-once");
-        t > e.position ? e.node.classList.add("aos-animate") : "undefined" != typeof o && ("false" === o || !n && "true" !== o) && e.node.classList.remove("aos-animate")
+        t > e.position ? e.node.classList.add("aos-animate"): "undefined" != typeof o && ("false" === o || !n && "true" !== o) && e.node.classList.remove("aos-animate")
       },
       o = function(e, t) {
         var o = window.pageYOffset,
@@ -449,7 +449,7 @@
     "use strict";
 
     function o(e) {
-      return e && e.__esModule ? e : {
+      return e && e.__esModule ? e: {
         default: e
       }
     }
@@ -468,7 +468,7 @@
     "use strict";
 
     function o(e) {
-      return e && e.__esModule ? e : {
+      return e && e.__esModule ? e: {
         default: e
       }
     }
@@ -522,7 +522,7 @@
       value: !0
     });
     var n = function(e) {
-      for (var t = 0, n = 0; e && !isNaN(e.offsetLeft) && !isNaN(e.offsetTop);) t += e.offsetLeft - ("BODY" != e.tagName ? e.scrollLeft : 0), n += e.offsetTop - ("BODY" != e.tagName ? e.scrollTop : 0), e = e.offsetParent;
+      for (var t = 0, n = 0; e && !isNaN(e.offsetLeft) && !isNaN(e.offsetTop);) t += e.offsetLeft - ("BODY" != e.tagName ? e.scrollLeft: 0), n += e.offsetTop - ("BODY" != e.tagName ? e.scrollTop: 0), e = e.offsetParent;
       return {
         top: n,
         left: t

@@ -1,11 +1,11 @@
 <!-- navigation unique to blog pages with url /slow-blog/* -->
 
 <div class="blog-nav-container">
-  <button class="dropbtn" onclick="displayItem('dropdown{{ category_name | upcase | remove : ' ' }}')">Categories
+  <button class="dropbtn" onclick="displayItem('dropdown{{ category_name | upcase | remove: ' ' }}')">Categories
     <i class="fa fa-caret-down"></i>
   </button>
 
-  <div class="dropdown-content display-none" id="dropdown{{ category_name | upcase | remove : ' ' }}">
+  <div class="dropdown-content display-none" id="dropdown{{ category_name | upcase | remove: ' ' }}">
     <ul class="blog-nav center-text">
     <li class="blog-nav-link {% if page.url == '/slow-blog/' %} blog-nav-link-active {% endif %}"><a href="{{ site.baseurl }}/slow-blog/">
     SLOW BLOG
