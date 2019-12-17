@@ -3,8 +3,8 @@
   background-color: #2A215E
   background-image: url($baseurl + 'assets/img/content/aboutme_small.png'), linear-gradient(to bottom right, #2A215E , #605BAF)
   background-position: right
-  background-size: auto 100vh
   background-repeat: no-repeat
+  background-size: auto 100vh
   height: 100vh
   max-height: 100vh
 
@@ -17,17 +17,14 @@
 
 .btn-landing
   display: flex
-  //width: 60%
-  width: 380px
   justify-content: space-between
   margin: 4rem 2rem
+  width: 380px
 
-.btn-landing
   .btn-outline
     color: $vivid-pink
 
 @media screen and ( min-width: 376px )
-
   .landing-wraper
     background-image: url($baseurl + 'assets/img/content/aboutme_large.png'), linear-gradient(to bottom right, #2A215E , #605BAF)
 
@@ -39,37 +36,42 @@
 @media screen and ( max-width: 768px )
   .btn-landing
     display: none
+
   .landing-content
     padding: 20vh 5vw 0 5vw
+
   .mouse
-    position: absolute
-    width: 20px
-    height: 40px
-    top: 75vh
-    left: 5vw
-    border-radius: 11px
-    border: 1px solid $soft-white
     animation: intro 1s
+    border: 1px solid $soft-white
+    border-radius: 11px
+    height: 40px
+    left: 5vw
+    position: absolute
+    top: 75vh
+    width: 20px
+
   .scroll
+    animation: finger 2.5s infinite
+    background: #ffed00
+    border-radius: 4px
     display: block
-    width: 3px
     height: 5px
     margin: 30px auto
-    border-radius: 4px
-    background: #ffed00
-    animation: finger 2.5s infinite
+    width: 3px
 
   @keyframes intro
-      from
-          opacity: 0
-          transform: translateY(40px)
-      to
-          opacity: 1
-          transform: translateY(0)
+    from
+      opacity: 0
+      transform: translateY(40px)
+
+    to
+      opacity: 1
+      transform: translateY(0)
 
   @keyframes finger
-      from
-          opacity: 0
-      to
-          opacity: 1
-          transform: translateY(-20px)
+    from
+      opacity: 0
+
+    to
+      opacity: 1
+      transform: translateY(-20px)
