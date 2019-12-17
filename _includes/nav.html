@@ -1,4 +1,9 @@
-<nav>
+<nav class="
+  {% if page.path contains '_posts' %}
+    nav-noscroll-post
+  {% else %}
+    nav-noscroll
+  {% endif %}">
   <div class="nav-brand">
     <a href="{{ site.baseurl }}/">
     <!--
