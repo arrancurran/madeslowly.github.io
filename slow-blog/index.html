@@ -6,7 +6,8 @@ scripts: type-delete-effect
 thumbnail:
 ---
 
-<!-- page for all posts -->
+<!-- this page shows all our posts ordered by date -->
+<!-- we link to this with /slow-blog/ -->
 
 <section class="blog-masthead global-masthead">
 
@@ -32,6 +33,8 @@ data-type='[
 </section>
 
 <div class="blog-wrapper">
+
+  {% include blog-nav.html %}
 
   {% for post in paginator.posts %}
 

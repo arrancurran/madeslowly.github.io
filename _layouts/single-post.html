@@ -3,43 +3,46 @@ layout: default
 ---
 <!-- single post layout -->
 
-<section class="blog-masthead global-masthead"  style="background-image: url('{{ site.baseurl }}/{{ page.background }}');"></section>
+<section class="single-post-masthead" ></section>
 
-<div class="post-preview-text">
+{% include blog-nav.html %}
 
-<h2 class="post-preview-title">{{ page.title }}</h2>
+<div class="single-post-header">
 
-<h3 class="post-preview-subtitle">{{ page.subtitle }}</h3>
+<h1 class="single-post-title">{{ page.title }}</h1>
 
-<p class="post-preview-meta">
-{{ page.date | date: '%B %d, %Y' }}
-</p>
+<h3 class="single-post-subtitle">{{ page.subtitle }}</h3>
 
-<ul class="post-preview-meta">
-  {% assign n = page.categories | size | minus:1 %}
-  {% assign p = page.categories | sort %}
-
-  {% for categories in p %}
-
-  <li>
-    {% assign i = forloop.index | minus:1 %}
-    <a href="{{ site.baseurl }}/slow-blog/categories/{{ page.categories[ i ] | replace: ' ', '-' }}">
-    {{ page.categories[ i ] }}
-    {% if n != i %} | {% endif %}
+<ul>
+  <li class="post-meta">
+    <i class="far fa-calendar" aria-hidden="true"></i>
+  </li>
+  <li class="post-meta">
+    <p class="post-meta">{{ page.date | date: '%B %d, %Y' }}</p>
+  </li>
+  <li class="post-meta">
+<!-- inline style to until better solu -->
+    <i class="fas fa-tags" style="padding-left:20px"></i>
+  </li>
+    {% for items in page.categories %}
+  <li class="post-tag">
+    <a href="{{ site.baseurl }}/slow-blog/categories/#{{ items | slugify }}">
+    {{ items | upcase }}
     </a>
   </li>
-
   {% endfor %}
-
+  <li class="post-meta">
+    {% include share-buttons.html %}
+  </li>
 </ul>
 
 </div>
 
+<section class="single-post-header-img"  style="background-image: url('{{ site.baseurl }}/{{ page.background }}');"></section>
+
 <section class="blog-content">
 
 {{ content }}
-
-{% include share-buttons.html %}
 
 </section>
 

@@ -1,6 +1,7 @@
 <script type="text/javascript" src="{{ site.baseurl }}/assets/js/mobile-nav-slider.js" async></script>
 
-<script type="text/javascript" src="{{ site.baseurl }}/assets/js/nav.js" async></script>
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/nav.js" ></script>
+<!-- removed async to ensute nav bg changes when reloading and pageYOffset != 0 -->
 
 {% if page.scripts == "type-effect" %}
 <script type="text/javascript" src="{{ site.baseurl }}/assets/js/typing-effect.js" async>
@@ -11,6 +12,8 @@
 <script type="text/javascript" src="/assets/js/typing-deleting-effect.js" async>
 </script>
 {% endif %}
+
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/displayItem.js" async></script>
 
 <script type="text/javascript" src="{{ site.baseurl }}/assets/aos/aos.js" ></script>
 

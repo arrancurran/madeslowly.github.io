@@ -1,4 +1,4 @@
-<!-- display for each post -->
+<!-- display card for each post -->
 
 <div class="post-preview-wrapper">
 
@@ -16,26 +16,9 @@ style="background-image: url('{{ site.baseurl }}/{{ post.background }}');"></div
 
 </a>
 
-<p class="post-preview-meta">
-{{ post.date | date: '%B %d, %Y' }}
-</p>
-
-<ul class="post-preview-meta">
-  {% assign n = post.categories | size | minus:1 %}
-  {% assign p = post.categories | sort %}
-
-  {% for categories in p %}
-
-  <li>
-    {% assign i = forloop.index | minus:1 %}
-    <a href="{{ site.baseurl }}/slow-blog/categories/{{ post.categories[ i ] | replace: ' ', '-' }}">
-    {{ post.categories[ i ] }}
-    {% if n != i %} | {% endif %}
-    </a>
-  </li>
-
-  {% endfor %}
-</ul>
-
+<ul class="center-text">
+  {% for categories in post.categories | sort %}
+  <li class="post-tag"><a href="{{ site.baseurl }}/slow-blog/categories/#{{ categories | slugify }}">
+    {{ categories | upcase }}</a></li>{% endfor %}</ul>
 </div>
 </div>

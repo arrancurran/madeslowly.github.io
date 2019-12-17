@@ -30,7 +30,8 @@ thumbnail:
   </section>
 <!-- list of blogs with category_name -->
   <div class="blog-wrapper">
-    {% include blog-nav.html %}
+
+  {% include blog-nav.html %}
   {% for post in site.categories[category_name] %}
     {% include list-post-items.html %}
   {% endfor %}
