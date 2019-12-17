@@ -1,30 +1,41 @@
 // dont hover on phones or tablets
 @media screen and ( min-width: 1024px )
-  .btn-pop:hover
-    @include btn-animation
-    box-shadow: $box-shadow-hover
 
-  .btn-color-swoosh:hover
-    @include btn-animation
-    box-shadow: $box-shadow-hover
+  .btn-pop
+    &:hover
+      @include btn-animation
+      box-shadow: $box-shadow-hover
 
-  .nav-menu:hover > a
-    opacity: .5
+  .btn-color-swoosh
+    &:hover
+      @include btn-animation
+      box-shadow: $box-shadow-hover
 
-  .nav-menu:hover > a:hover
-    opacity: 1
+  .nav-menu
+    &:hover > a
+      opacity: .5
 
-  .footer-nav-links:hover > li
-    opacity: .5
+    a
+      &:hover
+        opacity: 1
 
-  .footer-nav-links:hover > li:hover
-    opacity: 1
+  .footer-nav-links
+    &:hover > li
+      opacity: .5
 
-  .nav-socials#twitter:hover
-    color: $twitter-blue
+    li
+      &:hover
+        opacity: 1
 
-  .nav-socials#facebook:hover
-    color: $facebook-blue
+  .nav-twitter
+    &:hover
+      color: $twitter-blue
 
-  nav:hover > .site-logo
-    transform: translateY(5px)
+  .nav-facebook
+    &:hover
+      color: $facebook-blue
+
+  nav
+    &:hover
+      .site-logo
+        transform: translateY(5px)

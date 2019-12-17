@@ -1,24 +1,40 @@
 html
-  scroll-behavior: smooth
   font-size: $global-font-size
+  scroll-behavior: smooth
 
 body
   box-sizing: border-box
   overflow-x: hidden
 
 a
-  text-decoration: none
   color: inherit
-
-a:hover
   text-decoration: none
+
+  &:hover
+    text-decoration: none
 
 // defining z here just makes sure no funny bussiness happens with other layers showing up on top
-nav, footer
+nav,
+footer
   z-index: 1
 
 // Reset some basic elements
-body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+hr,
+dl,
+dd,
+ol,
+ul,
+figure
   margin: 0
   padding: 0
 
@@ -26,22 +42,23 @@ body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure
   color: $black
   font-family: $primary-font-family
 
-/* BUTTONS */
+// BUTTONS
 
-button, .btn
+button,
+.btn
   // some 'buttons' are actually hyperlinks styled to look like buttons, for the purpose of readers. So we always class as .btn btn-*
+  border-radius: 5px
+  display: block
   font-size: 1rem
   font-weight: $heavy-font
   letter-spacing: 1px
+  margin: 20px auto
+  padding: 1rem 1.6rem
   text-align: center
   text-decoration: none
-  border-radius: 5px
-  display: block
-  width: min-content
-  padding: 1rem 1.6rem
-  margin: 20px auto
+  transition: .3s ease-in-out
   white-space: nowrap
-  transition: 0.3s ease-in-out
+  width: min-content
 
 button
   cursor: pointer

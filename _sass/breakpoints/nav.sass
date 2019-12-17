@@ -1,36 +1,37 @@
-/*** Navbar breakpoints ***/
+// Navbar breakpoints
 
 @media screen and ( min-width: 1024px )
 
   .nav-menu
-    position: relative
-    justify-content: space-around
-    height: auto
-    padding: 0 20px
-    margin: 0
+    background-color: rgba(0, 0, 0, 0)
     font-size: 1.125rem
+    height: auto
+    justify-content: space-around
     list-style: none
+    margin: 0
+    padding: 0 20px
+    position: relative
     text-align: right
     transform: translateX(0)
-    background-color: rgba(0, 0, 0, 0)
+
     a
-      transition: .2s ease-in-out
+      transition: opacity .2s ease-in-out
 
   .nav-menu-topbar
     display: none
 
   .nav-link
     display: inline
-    opacity: 1
-    padding: 0
     margin: 0
     margin-left: 2rem
+    opacity: 1
+    padding: 0
 
   .nav-socials
     display: inline
-    padding: 0 0 0 1rem
     font-size: 1.1rem
-    transition: 0.2s ease-in
+    padding: 0 0 0 1rem
+    transition: color .2s ease-in
 
   .burger
     display: none

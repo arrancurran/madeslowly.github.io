@@ -1,12 +1,13 @@
 .footer-wraper
-  display: grid
-  grid-template-columns: auto auto
-  grid-template-areas: "footer-header footer-header" "sitemap category-links" "footer-contact footer-contact" "footer-base footer-base"
-  padding: 5vh 5vw
   background-color: $footer-bg
   color: $white
+  display: grid
   grid-column-gap: 5vw
   grid-row-gap: 30px
+  grid-template-areas: 'footer-header footer-header' 'sitemap category-links' 'footer-contact footer-contact' 'footer-base footer-base'
+  grid-template-columns: auto auto
+  padding: 5vh 5vw
+
   h3
     color: $vivid-blue
     padding: 12px 0
@@ -15,9 +16,9 @@
   grid-area: footer-header
 
 .footer-nav-links > li
-  font-size: 0.8rem
+  font-size: .8rem
   list-style: none
-  padding: 3px 0px
+  padding: 3px 0
 
 .sitemap
   grid-area: sitemap
@@ -33,14 +34,15 @@
   padding-bottom: 40px
 
 .btn-footer
+  color: $pure-white
   width: 100%
-  color: white
 
 .footer-base
-  grid-area: footer-base
+  border-top: 1px solid $grey
   display: flex
   flex-direction: column
+  grid-area: footer-base
   text-align: center
-  border-top: 1px solid rgb(130, 130, 130)
+
   p
     font-size: $small-font
