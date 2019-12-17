@@ -6,15 +6,7 @@ thumbnail:
 ---
 <!-- this page shows all our posts ordered by catogory -->
 <!-- we link to this from any catogory clicks -->
-<!--
-<section class="blog-masthead global-masthead">
 
-<h1>
-  Slow Blog | {{ page.title }}
-</h1>
-
-</section>
--->
 
 {% for category in site.categories %}
   {% capture category_name %}{{ category | first }}{% endcapture %}
@@ -28,7 +20,7 @@ thumbnail:
   <h1 class="">{{ category_name }}</h1>
 
   </section>
-<!-- list of blogs with category_name -->
+<!-- list of posts with category_name -->
   <div class="blog-wrapper">
 
   {% include blog-nav.html %}
