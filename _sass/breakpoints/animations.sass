@@ -6,21 +6,20 @@
   .btn-pop:hover
     @include btn-animation
     box-shadow: $box-shadow-hover
-    //color: inherit
-    // Id like to automatically add the shadow color depending on the button color
 
   .btn-color-swoosh:hover
     @include btn-animation
     box-shadow: $box-shadow-hover
 
-  // assume touch so dont bother looding these
   .nav-menu:hover > a
-    opacity: 0.5
+    opacity: .5
+
   .nav-menu:hover > a:hover
     opacity: 1
 
   .footer-nav-links:hover > li
-    opacity: 0.5
+    opacity: .5
+
   .footer-nav-links:hover > li:hover
     opacity: 1
 
@@ -30,6 +29,5 @@
   .nav-socials#facebook:hover
     color: $facebook-blue
 
-  nav:hover
-    .site-logo
-      transform: translateY(5px)
+  nav:hover > .site-logo
+    transform: translateY(5px)
