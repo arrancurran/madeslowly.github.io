@@ -1,0 +1,16 @@
+twitter:
+  username: made_slowly
+  id: 1166694797148663809
+  url: https://twitter.com/
+  dm_url: https://twitter.com/messages/compose?recipient_id=
+  icon: twitter
+  image: "assets/img/content/default-thumb.jpg"
+
+facebook:
+  username: madeslowly
+  id: 108780627242737
+  url: https://www.facebook.com/
+  dm_url: https://m.me/
+  icon: facebook
+  app_id: 832697543799750
+  image: "assets/img/content/default-thumb.jpg"

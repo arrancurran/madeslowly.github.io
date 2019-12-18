@@ -21,10 +21,10 @@ layout: default
     <p class="post-meta">{{ page.date | date: '%B %d, %Y' }}</p>
   </li>
   <li class="post-meta">
-<!-- inline style to until better solu -->
+<!-- inline style until better solu -->
     <i class="fas fa-tags" style="padding-left:20px"></i>
   </li>
-    {% for items in page.categories %}
+  {% for items in page.categories %}
   <li class="post-tag">
     <a href="{{ site.baseurl }}/slow-blog/categories/#{{ items | slugify }}">
     {{ items | upcase }}
@@ -38,7 +38,9 @@ layout: default
 
 </div>
 
-<section class="single-post-header-img"  style="background-image: url('{{ site.baseurl }}/{{ page.background }}');"></section>
+<section
+  class="single-post-header-img"
+  style="background-image: url('{{ site.baseurl }}/{{ page.background }}');"></section>
 
 <section class="blog-content">
 

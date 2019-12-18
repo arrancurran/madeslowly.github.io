@@ -46,30 +46,9 @@ favicon: "assets/img/favicon.png"
 aos-duration: 1200
 aos-easing: ease-out-sine
 
-# For SEO stuff
-
-social:
-  name: Made Slowly
-  links:
-    - https://twitter.com/made_slowly/
-    - https://www.facebook.com/madeslowly/
-
 google:
   verification: vS4TlhPLmtbZxznBj8FSpIML8lLL_Vc3YNR5dHxIJbY
   analytics: UA-153106410-1
-
-twitter:
-  username: made_slowly
-  link: https://twitter.com/made_slowly/
-  icon: twitter
-  image: "assets/img/content/default-thumb.jpg"
-
-facebook:
-  username: madeslowly
-  link: https://www.facebook.com/madeslowly/
-  icon: facebook
-  app_id: 832697543799750
-  image: "assets/img/content/default-thumb.jpg"
 
 # Build settings
 

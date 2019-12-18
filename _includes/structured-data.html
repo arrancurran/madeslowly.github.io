@@ -28,12 +28,9 @@
     "@id":"{{ site.url }}{{ site.baseurl }}/#website",
     "url": "{{ site.url }}{{ site.baseurl }}/",
     "sameAs":[
-      "mailto:arran@madeslowly.co.uk",
-      {% assign n = site.social.links | size %}
-      {% for links in site.social.links %}
-      {% assign i = forloop.index %}
-      "{{ links }}"{% if n != i %} , {% endif %}
-      {% endfor %} ],
+      "mailto:{{ site.author.email }}",
+      "{{ site.data.socials.twitter.url }}{{ site.data.socials.twitter.username }}/",
+      "{{ site.data.socials.facebook.url }}{{ site.data.socials.facebook.username }}/" ],
     "name": "{{ site.title }} | {{ site.subtitle }}",
     "description": "{{ site.description }}",
     "image": "{{ site.url }}{{ site.baseurl }}/assets/img/page-thumbs/{{ site.thumbnail }}",
@@ -76,10 +73,7 @@
     "addressCountry": "{{ site.postal_add.country }}",
     "postalCode": "{{ site.postal_add.postcode }}" },
   "telephone": "{{ site.phone }}",
-  "sameAs": [
+  "sameAs":[
     "mailto:{{ site.author.email }}",
-    {% assign n = site.social.links | size %}
-    {% for links in site.social.links %}
-    {% assign i = forloop.index %}
-    "{{ links }}"{% if n != i %} , {% endif %}
-    {% endfor %} ] } </script>
+    "{{ site.data.socials.twitter.url }}{{ site.data.socials.twitter.username }}/",
+    "{{ site.data.socials.facebook.url }}{{ site.data.socials.facebook.username }}/" ] } </script>

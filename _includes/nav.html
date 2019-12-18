@@ -6,17 +6,13 @@
   {% endif %}">
   <div class="nav-brand">
     <a href="{{ site.baseurl }}/">
-    <!--
-      {{ site.title | upcase }}
-    -->
     {% include site-logo.svg %}
     </a>
-    <a class="nav-socials nav-twitter" href="{{ site.twitter.link }}">
-    <i class="fab fa-{{ site.twitter.icon }}" title="Made Slowly Twitter account"></i>
+    {% for social in site.data.socials %}
+    <a class="nav-socials nav-{{ social[1].icon }}" href="{{ social[1].url }}{{ social[1].username }}/">
+    <i class="fab fa-{{ social[1].icon }}" title="Made Slowly {{ social[1].icon | capitalize }} account"></i>
     </a>
-    <a class="nav-socials nav-facebook" href="{{ site.facebook.link }}">
-    <i class="fab fa-{{ site.facebook.icon }}" title="Made Slowly Facebook account"></i>
-    </a>
+    {% endfor %}
   </div>
 
   <ul class="nav-menu">
@@ -29,12 +25,11 @@
     </a>
     {% endif %} {% endfor %}
     <li>
-    <a class="mob-socials nav-link" href="{{ site.twitter.link }}">
-    <i class="fab fa-{{ site.twitter.icon }}" title="Made Slowly Twitter account"></i>
-    </a>
-    <a class="mob-socials nav-link" href="{{ site.facebook.link }}">
-    <i class="fab fa-{{ site.facebook.icon }}" title="Made Slowly Facebook account"></i>
-    </a>
+      {% for social in site.data.socials %}
+      <a class="mob-socials nav-link" href="{{ social[1].url }}{{ social[1].username }}/">
+      <i class="fab fa-{{ social[1].icon }}" title="Made Slowly {{ social[1].icon | capitalize }} account"></i>
+      </a>
+      {% endfor %}
     </li>
   </ul>
 

@@ -15,16 +15,12 @@
 
   <ul class="social-media">
 
-  <!-- need to loop this -->
+  {% for social in site.data.socials %}
   <li class="social-media-item">
-  <a href="https://twitter.com/messages/{{ site.twitter.username }}">
-  <i class="fab fa-twitter-square fa-2x social-media-link"></i></a>
+  <a href="{{ social[1].dm_url }}{{ social[1].id }}/">
+  <i class="fab fa-{{ social[1].icon }}-square fa-2x social-media-link"></i></a>
   </li>
-
-  <li class="social-media-item">
-  <a href="https://m.me/{{ site.facebook.username }}">
-  <i class="fab fa-facebook-square fa-2x social-media-link"></i></a>
-  </li>
+  {% endfor %}
 
   <li class="social-media-item">
   <a href="https://join.slack.com/t/madeslowly/shared_invite/enQtODM5MzUzNDc1NzYxLWM1ZTBkMmMwY2RkYjg2MDkwMmE5YWFkZjQwYjZlODM1YzVmZmE1OTA3MzBmOWVlYjllNzYzNjA2NDgwMDk3ZGI"><i class="fab fa-slack fa-2x social-media-link"></i></a>
