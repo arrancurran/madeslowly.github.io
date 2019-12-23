@@ -3,7 +3,7 @@
   strap: custom code | branding | custom design
   description: Scientific project at the University of Porto. A bespoke website, detailing research into fluid flow in complex environments. Working remotely with Laura was achieved with Skype and other communication methods.
   screenshot: deano/home-screenshot.jpg
-  url: https://www.hemoswimmers.madeslowly.xyz/
+  url: https://paginas.fe.up.pt/~campo/HEMOSwimmers/
   technologies:
     - icon: sass
     - icon: html5
