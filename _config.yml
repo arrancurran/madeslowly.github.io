@@ -49,6 +49,7 @@ aos-easing: ease-out-sine
 google:
   verification: vS4TlhPLmtbZxznBj8FSpIML8lLL_Vc3YNR5dHxIJbY
   analytics: UA-153106410-1
+  map_api_key: AIzaSyDJ0v-xNx91cNouNclVsaVkLqywtydoI5U
 
 # Build settings
 
@@ -71,8 +72,6 @@ plugins:
   - jekyll-autoprefixer
   - jekyll-sitemap
   - jekyll-target-blank
-
-google_maps_javascript_api_key: AIzaSyDJ0v-xNx91cNouNclVsaVkLqywtydoI5U
 
 defaults:
   -

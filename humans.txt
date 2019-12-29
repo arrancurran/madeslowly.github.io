@@ -15,7 +15,7 @@ Hello human
  Twitter: @{{ site.author.twitter }}
 
  Site: {{ site.url }}
- Twitter: @{{ site.twitter.username }}
+ Twitter: @{{ site.data.socials.twitter.username }}
  Location: {{ site.postal_add.city }}, {{ site.postal_add.country }}
 
  Looking to collaborate? Get in touch.
