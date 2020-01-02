@@ -15,6 +15,8 @@ description: Community campaign group based in Oxford. The project is built with
 
 thumbnail: cyclox-thumb.jpg
 
+nav: 'dark'
+
 logos:
   - logo-1.jpg
 

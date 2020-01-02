@@ -7,8 +7,8 @@ date: 2018-12-24
 background: 'assets/img/posts/so-you-want-a-website.jpg'
 description: So many people don't know where to start when looking for a new website. This is a helpful guide on what to consider before setting off.
 overview:
-
 thumbnail: so-you-want-a-website-thumb.jpg
+nav: 'dark'
 ---
 
 You wake up one day and think, *you know what I need, a website*. Well, buckle in, because you just committed to hours of learning and developing. Oh, no, wait a moment, it's the 21st century and everyone is saying you can have a website in seconds with zero effort. Whether you employ the services of a website developer 👋 or a DIY service like [squarespace][squarespace] or [wix][wix], your site will only look as good as your content. This is so crucial and also so undervalued. No matter how sophisticated a website's code is, it ultimately presents your content to be consumed visually by your audience. So whether its a bespoke developer or a DIY service, what you are paying for is a display cabinet. The more you pay the bigger, stronger, and sexier the cabinet will be, but what you put in it is what people look at.

@@ -9,6 +9,8 @@ description: A common hurdle for people getting a new website is understanding w
 overview:
 
 thumbnail: what-is-a-website.jpg
+
+nav: 'dark'
 ---
 
 A common hurdle for people getting a new website is understanding what exactly they are getting and more importantly, what they actually need. Defining what is a website is a bit like trying to define what a vehicle is. Sure there are many common features of every website but there are literally thousands of variations that are suited to different situations. You don't need a tractor to pick up the kids from school.

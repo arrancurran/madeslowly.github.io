@@ -9,6 +9,7 @@ date: 2018-01-20
 background: 'assets/img/posts/velovedic.co.uk.jpg'
 # Image for post header
 screenshot: 'home-screenshot.jpg'
+nav: 'dark'
 
 directory: velovedic
 

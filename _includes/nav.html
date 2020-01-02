@@ -1,9 +1,11 @@
 <nav class="
-  {% if page.path contains '_posts' %}
-    nav-noscroll-post
+  <!-- if the page has a light bg declare nav: 'dark' in its front matter -->
+  {% if page.nav == 'dark' %}
+    nav-noscroll-dark
   {% else %}
     nav-noscroll
-  {% endif %}">
+  {% endif %}
+  ">
   <div class="nav-brand">
     <a href="{{ site.baseurl }}/">
     {% include site-logo.svg %}
