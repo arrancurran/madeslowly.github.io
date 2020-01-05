@@ -22,14 +22,14 @@
 // email to user
   $subject_response = "Thank you for your message" ;
 
-  $message_body_response = "Hi ".$_POST["username"]."\n\n";
+  $message_body_response = "Hello,\n\n";
 
   $message_body_response .= "This is an automated response to the message you sent whilst browsing madeslowly.co.uk.\n\n";
 
   $message_body_response .= "Thank you for your message, I'll get back to you as soon as I can.\n\n\n";
 
   $message_body_response .= "Arran Curran\n\n";
-  $message_body_response .= "made slowly | a slow developer\n\n\n";
+  $message_body_response .= " Made Slowly | Custom websites designed in Oxford \n\n\n";
 
   $headers_response = "From:" . $to;
 

@@ -27,7 +27,7 @@
   $message_body_response .= "Thank you for your message, I'll get back to you as soon as I can.\n\n\n";
 
   $message_body_response .= "Arran Curran\n\n";
-  $message_body_response .= "made slowly | a slow developer\n\n\n";
+  $message_body_response .= " Made Slowly | Custom websites designed in Oxford \n\n\n";
 
   $message_body_response .= "Your message:\n\n".$_POST["message"];
 
