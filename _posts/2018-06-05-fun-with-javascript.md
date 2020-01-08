@@ -11,7 +11,14 @@ description: Fun with JavaScript. Is your browser capable of doing science? We t
 thumbnail: fun-with-js-thumb.jpg
 
 nav: 'dark'
+
+func: drawOpticalTrapData
 ---
+<script src="https://cdn.jsdelivr.net/npm/p5"></script>
+
+<script src="{{ site.baseurl }}/assets/js/trapping.js"></script>
+
+<link rel="stylesheet" type="text/css" title="made slowly has all the style" href="{{ site.baseurl }}/assets/css/locals/trapping-with-js.css" media="screen" />
 
 OK, so JavaScript is not the go to language for a scientist wanting to simulate some science. That would be silly. BUT, I'm a nerd, and the thought process of a nerd is as follows;
 
@@ -28,18 +35,4 @@ So we have our colloid and our laser and with some optical jigery pockery we can
 
 Now we can get to our first 'experiment', trapping a single colloid and recording its movement.
 
-<div class="optical-trap">
-
-  <div id="optical-trap"></div>
-  <p>Temperature</p>
-  <div class="slidecontainer">
-    <input type="range" min="1" max="10" step=".1" value="5" class="slider" id="zigma" name="zigma">
-  </div>
-  <p>Trap Strength</p>
-  <div class="slidecontainer">
-    <input type="range" min="0.01" max="1" step=".01" value="0.05" class="slider" id="kappa" name="kappa">
-  </div>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/p5"></script>
-<script src="{{"/assets/js/trapping.js" | relative_url }}"></script>
+{% include optical-trap.html %}

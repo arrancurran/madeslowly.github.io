@@ -1,6 +1,6 @@
 ---
 layout: single-post
-categories: [ how to, web design ]
+categories: [ web 101, web design ]
 title: "You want a website"
 subtitle: "So what do you need?"
 date: 2018-12-24

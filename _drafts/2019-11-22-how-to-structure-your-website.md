@@ -1,6 +1,6 @@
 ---
 layout: single-post
-categories: [how to, web design ]
+categories: [web 101, web design ]
 title: "Website structure"
 subtitle: "Less is more, always"
 date: 2019-11-22

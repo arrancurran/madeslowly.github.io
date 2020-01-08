@@ -1,6 +1,6 @@
 ---
 layout: single-post
-categories: [ how to, wordpress, jekyll ]
+categories: [ web 101, wordpress, jekyll ]
 title: "What is a website"
 subtitle: "How do they work?"
 date: 2018-12-24

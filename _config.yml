@@ -62,6 +62,11 @@ exclude:
   - package-lock.json
 
 markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
 paginate: 6
 paginate_path: /slow-blog/page-:num/
 permalink: /slow-blog/:title/
