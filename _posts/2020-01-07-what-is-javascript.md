@@ -64,27 +64,24 @@ JavaScript is either embedded into a web page or else it's included in a .js fil
 
 Actually adding JavaScript code to a web page is a pretty simple process (and a familiar one if you've done any coding with HTML and CSS). JavaScript can be added directly to a page's code using ```<script>``` tags and giving them the type attribute ```text/javascript```. Honestly, JavaScript looks very similar to adding CSS to a site. Here's a side-by-side comparison:
 
-**css:**
-{% highlight CSS %}
-<style>
-
-	CSS goes here
-</style>
-{% endhighlight %}
-
 **JavaScript:**
-{% highlight javascript %}
+```html
 <script type="text/javascript">
-	JavaScript code goes here
+	var t = 100 ;
 </script>
-{% endhighlight %}
+```
 
-{% highlight javascript %}
+```css
+.class{
+	width: 100px
+}
+```
 
-var test = themoney ;
-
-{% endhighlight %}
-
+```ruby
+def print_hi(name)
+  puts 'Hi, #{name}'
+end
+```
 
 Voila! JavaScript code can also be added to a page as a separate header file with the extension .js. The script is then downloaded and processed in	each individual's web browser, turning it into the dynamic objects and effects they see on their screen.
 

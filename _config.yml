@@ -61,12 +61,14 @@ exclude:
   - node_modules
   - package-lock.json
 
-markdown: kramdown
 highlighter: rouge
+markdown: kramdown
 kramdown:
-  input: GFM
-  hard_wrap: false
-  syntax_highlighter: rouge
+ input: GFM
+ auto_ids: true
+ hard_wrap: false
+ syntax_highlighter: rouge
+
 paginate: 6
 paginate_path: /slow-blog/page-:num/
 permalink: /slow-blog/:title/
