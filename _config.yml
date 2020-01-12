@@ -1,55 +1,49 @@
-# Build for production
-# JEKYLL_ENV=production jekyll b
-title: Made Slowly
-subtitle: Custom websites designed in Oxford
-# Used throuought the site. Note this is truncated to 5 words in our structured data and landing page title
-description: Freelance web developer, based in Oxford, providing an all-in-one solution to getting a website. Your new website will be smarter and faster all whilst looking awesome | Web Design | Digital Branding | Secure Hosting
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your entire site, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# `jekyll serve`. If you change this file, please restart the server process.
+# Build for production `JEKYLL_ENV=production jekyll b`
 
-# if page home
-#   title = site.title | subtitle
-#   description = site.description
-# else
-#   title = title | site.title
-#   description = page.description
+title:               Made Slowly
+subtitle:            Custom websites designed in Oxford
+description:         Freelance web developer, based in Oxford, providing an all-in-one solution to getting a website. Your new website will be smarter and faster all whilst looking awesome | Web Design | Digital Branding | Secure Hosting
+keywords:            website designer, website developer, custom websites, Oxford, Oxfordshire, Arran Curran
 
-baseurl: ""
+baseurl:             ""
+url:                 "https://www.madeslowly.co.uk"
+lang:                en_GB
 
-url: "https://www.madeslowly.co.uk"
-
-lang: en_GB
-
-keywords: website designer, website developer, custom websites, Oxford, Oxfordshire, Arran Curran
-# Global site author, additional content authors can be added in _data/authors.yml
+# Site author, additional content authors are added in _data/authors.yml
 author:
-  name: Arran Curran
-  email: arran@madeslowly.co.uk
-  twitter: arrancurran
-  description: Made Slowly is the creation of Arran Curran, a freelance developer based in Oxford. I have been developing digital solutions in a variety of enviroments for over 20 years. With my wide range of experience I can deliver an all-in-one solution, so your new website will be smarter and faster all whilst looking awesome (the website, not me). Get in touch and find out how I can help you.
-
-phone: 07940 251270‬‬
+  name:              Arran Curran
+  email:             arran@madeslowly.co.uk
+  twitter:           arrancurran
+  description:       Made Slowly is the creation of Arran Curran, a freelance developer based in Oxford. I have been developing digital solutions in a variety of enviroments for over 20 years. With my wide range of experience I can deliver an all-in-one solution, so your new website will be smarter and faster all whilst looking awesome (the website, not me). Get in touch and find out how I can help you.
 
 postal_add:
-  street: Nursery Close
-  city: Oxford
-  region: Oxfordshire
-  country: United Kingdom
-  postcode: OX3 7AG
+  street:            Nursery Close
+  city:              Oxford
+  region:            Oxfordshire
+  country:           United Kingdom
+  postcode:          OX3 7AG
 
-opening_hours: Mo,Tu,We,Th,Fr,Sa,Su 09:30-18:00
+phone:               07940 251270‬‬
 
-# default thumbnail if page.thumbnail is not defined
-thumbnail: default-thumb.jpg
+opening_hours:       Mo,Tu,We,Th,Fr,Sa,Su 09:30-18:00
 
-logo: "assets/img/page-thumbs/default-thumb.jpg"
-favicon: "assets/img/favicon.png"
+thumbnail:           default-thumb.jpg
+logo:                "assets/img/page-thumbs/default-thumb.jpg"
+favicon:             "assets/img/favicon.png"
 
-aos-duration: 1200
-aos-easing: ease-out-sine
+aos-duration:        1200
+aos-easing:          ease-out-sine
 
 google:
-  verification: vS4TlhPLmtbZxznBj8FSpIML8lLL_Vc3YNR5dHxIJbY
-  analytics: UA-153106410-1
-  map_api_key: AIzaSyDJ0v-xNx91cNouNclVsaVkLqywtydoI5U
+  verification:      vS4TlhPLmtbZxznBj8FSpIML8lLL_Vc3YNR5dHxIJbY
+  analytics:         UA-153106410-1
+  map_api_key:       AIzaSyDJ0v-xNx91cNouNclVsaVkLqywtydoI5U
 
 # Build settings
 
@@ -61,17 +55,16 @@ exclude:
   - node_modules
   - package-lock.json
 
-highlighter: rouge
-markdown: kramdown
+#highlighter:         rouge
+markdown:            kramdown
+highlighter:         rouge
 kramdown:
- input: GFM
- auto_ids: true
- hard_wrap: false
- syntax_highlighter: rouge
+  input:              GFM
+  syntax_highlighter: rouge
 
-paginate: 6
-paginate_path: /slow-blog/page-:num/
-permalink: /slow-blog/:title/
+paginate:            6
+paginate_path:       /slow-blog/page-:num/
+permalink:           /slow-blog/:title/
 
 plugins:
   - jekyll-feed
@@ -83,22 +76,22 @@ plugins:
 defaults:
   -
     scope:
-      path: "error-pages/*"
+      path:          "error-pages/*"
     values:
-      sitemap: false
+      sitemap:       false
 
 sass:
-  style: compressed
+  style:             compressed
   load_paths:
-        - _sass
-        - node_modules
+    - _sass
+    - node_modules
 
 compress_html:
   ignore:
-    envs: development
-  comments: all
+    envs:            development
+  comments:          all
 
 autoprefixer:
-  only_production: true
+  only_production:   true
   browsers:
-  - cover 99.5%
+    - cover 99.5%
