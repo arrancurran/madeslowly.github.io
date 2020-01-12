@@ -14,10 +14,8 @@ nav: 'dark'
 ---
 
 ## JavaScript:
-```html
-<script type="text/javascript">
+```javascript
 	var t = 100 ;
-</script>
 ```
 
 ## CSS
