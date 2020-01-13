@@ -13,12 +13,12 @@ thumbnail: what-is-a-website.jpg
 nav: 'dark'
 ---
 
-## JavaScript:
-{% highlight html %}
+## HTML:
+```html
 <script type="text/javascript">
 	var t = 100 ;
 </script>
-{% endhighlight %}
+```
 
 ## CSS
 ```css
@@ -34,7 +34,8 @@ def print_hi(name)
 end
 ```
 
-{% highlight javascript %}
+## JavaScript
+```javascript
 function sayHello(name) {
   if (!name) {
     console.log('Hello World');
@@ -42,4 +43,4 @@ function sayHello(name) {
     console.log(`Hello ${name}`);
   }  
 }  
-{% endhighlight %}
+```
