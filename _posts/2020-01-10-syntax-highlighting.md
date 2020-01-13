@@ -14,9 +14,11 @@ nav: 'dark'
 ---
 
 ## JavaScript:
-```javascript
+{% highlight html %}
+<script type="text/javascript">
 	var t = 100 ;
-```
+</script>
+{% endhighlight %}
 
 ## CSS
 ```css
@@ -31,3 +33,13 @@ def print_hi(name)
   puts 'Hi, #{name}'
 end
 ```
+
+{% highlight javascript %}
+function sayHello(name) {
+  if (!name) {
+    console.log('Hello World');
+  } else {
+    console.log(`Hello ${name}`);
+  }  
+}  
+{% endhighlight %}

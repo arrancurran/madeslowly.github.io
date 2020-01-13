@@ -9,4 +9,16 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 
-gem "github-pages", "~> 203", group: :jekyll_plugins
+gem "jekyll"
+
+gem "rouge"
+
+gem "kramdown"
+
+gem 'jekyll-feed'
+
+gem "jekyll-feed"
+gem "jekyll-paginate"
+gem "jekyll-autoprefixer"
+gem "jekyll-sitemap"
+gem "jekyll-target-blank"

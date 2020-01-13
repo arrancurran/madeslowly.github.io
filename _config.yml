@@ -55,12 +55,12 @@ exclude:
   - node_modules
   - package-lock.json
 
-#highlighter:         rouge
-markdown:            kramdown
-highlighter:         rouge
+markdown: kramdown
+highlighter: rouge
 kramdown:
-  input:              GFM
-  syntax_highlighter: rouge
+  input: GFM
+  syntax_highlighter_opts:
+    default_lang: html
 
 paginate:            6
 paginate_path:       /slow-blog/page-:num/
