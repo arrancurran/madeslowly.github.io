@@ -11,12 +11,6 @@ source "https://rubygems.org"
 
 gem "jekyll"
 
-gem "rouge"
-
-gem "kramdown"
-
-gem 'jekyll-feed'
-
 gem "jekyll-feed"
 gem "jekyll-paginate"
 gem "jekyll-autoprefixer"

@@ -62,7 +62,7 @@
   color: #000000;
   font-weight: bold;
 }
-.highlight .kd {
+.highlight .keyword {
   color: #000000;
   font-weight: bold;
 }
@@ -149,7 +149,7 @@
 .highlight .nb {
   color: #0086B3;
 }
-.highlight .nc {
+.highlight .selector {
   color: #445588;
   font-weight: bold;
 }

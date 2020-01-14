@@ -8,8 +8,13 @@
 
 title:               Made Slowly
 subtitle:            Custom websites designed in Oxford
-description:         Freelance web developer, based in Oxford, providing an all-in-one solution to getting a website. Your new website will be smarter and faster all whilst looking awesome | Web Design | Digital Branding | Secure Hosting
-keywords:            website designer, website developer, custom websites, Oxford, Oxfordshire, Arran Curran
+description:         >-
+
+    Freelance web developer, based in Oxford, providing an all-in-one solution to getting a website. Your new website will be smarter and faster all whilst looking awesome | Web Design | Digital Branding | Secure Hosting
+
+keywords:            >-
+
+    website designer, website developer, custom websites, Oxford, Oxfordshire, Arran Curran
 
 baseurl:             ""
 url:                 "https://www.madeslowly.co.uk"
@@ -20,7 +25,9 @@ author:
   name:              Arran Curran
   email:             arran@madeslowly.co.uk
   twitter:           arrancurran
-  description:       Made Slowly is the creation of Arran Curran, a freelance developer based in Oxford. I have been developing digital solutions in a variety of enviroments for over 20 years. With my wide range of experience I can deliver an all-in-one solution, so your new website will be smarter and faster all whilst looking awesome (the website, not me). Get in touch and find out how I can help you.
+  description:       >-
+
+      Made Slowly is the creation of Arran Curran, a freelance developer based in Oxford. I have been developing digital solutions in a variety of enviroments for over 20 years. With my wide range of experience I can deliver an all-in-one solution, so your new website will be smarter and faster all whilst looking awesome (the website, not me). Get in touch and find out how I can help you.
 
 postal_add:
   street:            Nursery Close
