@@ -1,9 +1,11 @@
+---
+---
 <?php
   /*
   we will validate fields before getting here, but we need to have an escape in the event of some server error failling to send the messsage
   */
-  $to = "arran@madeslowly.co.uk";
-  $subject = "madeslowly.co.uk contact";
+  $to = "arran@{{ site.url }}";
+  $subject = "{{ site.url }} contact";
   $name = $_REQUEST['name'] ;
   $email = $_REQUEST['email'] ;
   $message = $_REQUEST['message'] ;

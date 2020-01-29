@@ -17,7 +17,7 @@ keywords:            >-
     website designer, website developer, custom websites, Oxford, Oxfordshire, Arran Curran
 
 baseurl:             ""
-url:                 "https://www.madeslowly.co.uk"
+url:                 "https://www.pixelmatters.co.uk"
 lang:                en_GB
 
 # Site author, additional content authors are added in _data/authors.yml
@@ -61,6 +61,8 @@ exclude:
   - assets/dev
   - node_modules
   - package-lock.json
+  - deploy-key
+  - deploy-key.pub
 
 markdown: kramdown
 highlighter: rouge

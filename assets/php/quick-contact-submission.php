@@ -1,8 +1,8 @@
 <?php
 /* Request feilds from _includes/quick-contact.html */
 // email to owner
-  $to = "arran@madeslowly.co.uk";
-  $subject = "made slowly inquiry";
+  $to = "arran@{{ site.url }}";
+  $subject = "{{ site.url }} inquiry";
 
   $inquiryOption = $_REQUEST['inquiryOption'] ;
   $email = $_REQUEST['email'] ;

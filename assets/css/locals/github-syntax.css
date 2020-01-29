@@ -1,4 +1,5 @@
-.highlight table td { padding: 5px; }
+pre { white-space: pre-wrap; }
+
 .highlight table pre { margin: 0; }
 .highlight .cm {
   color: #999988;
@@ -62,7 +63,7 @@
   color: #000000;
   font-weight: bold;
 }
-.highlight .keyword {
+.highlight .kd {
   color: #000000;
   font-weight: bold;
 }
@@ -149,7 +150,7 @@
 .highlight .nb {
   color: #0086B3;
 }
-.highlight .selector {
+.highlight .nc {
   color: #445588;
   font-weight: bold;
 }

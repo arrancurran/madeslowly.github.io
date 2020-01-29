@@ -7,3 +7,5 @@ _site/
 /assets/dev
 notes.md
 node_modules
+deploy-key
+deploy-key.pub
