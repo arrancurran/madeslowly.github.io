@@ -11,6 +11,8 @@ overview:
 thumbnail: what-is-a-website.jpg
 
 nav: 'dark'
+
+comments: true
 ---
 
 A common hurdle for people getting a new website is understanding what exactly they are getting and more importantly, what they actually need. Defining what is a website is a bit like trying to define what a vehicle is. Sure there are many common features of every website but there are literally thousands of variations that are suited to different situations. You don't need a tractor to pick up the kids from school.
@@ -23,7 +25,7 @@ When you view a website on your device, you are using software to interpret inst
 
 So without being silly, we can start at the beginning. If one computer had a physical cable stretching to another computer, you could send a message asking to be sent a picture for example.
 
-![peer two peer connection](/assets/img/posts/what-is-a-website/p2p-connection.jpg)
+![peer two peer connection](/assets/img/posts/what-is-a-website/p2p-connection.jpg){: .blog-image}
 
 Many of the protocols developed during the early days of the internet still exist today and at the core, the internet is essentially one computer making requests to another computer.
 

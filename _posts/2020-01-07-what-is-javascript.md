@@ -4,9 +4,9 @@ categories: [ web 101 ]
 title: "What is JavaScript"
 subtitle: "And why do you care"
 date: 2020-01-07
-background: 'assets/img/posts/experimenting-with-javascript.jpg'
+background: 'assets/img/posts/what-is-javascript.jpg'
 
-description: Fun with JavaScript. Is your browser capable of doing science? We try this out with some simple JavaScript and a little bit of physics.
+description: Simple introduction to JavaScirpt. This article aims to inform the techy curious what JavaScript is and provide further resources to learn how to use JavaScript in the real world.
 
 thumbnail: fun-with-js-thumb.jpg
 
@@ -15,6 +15,8 @@ nav: 'dark'
 func:
 
 syntax_style: "github"
+
+comments: true
 ---
 
 It doesn't take long for the techy curious to come across JavaScript. Chances are, you're here because you've heard the term and have been doing a bit of gooleing. A little understanding of JavaScript can be really powerful for those wanting to tweak things.
@@ -23,10 +25,13 @@ It doesn't take long for the techy curious to come across JavaScript. Chances ar
 
 JavaScript (JS) is a scripting language used to create and control a websites content. Unlike HTML and CSS, content that is under the control of JS can respond and change in response to a users actions. Features like:
 
-- Animated graphics
-- Photo slideshows
-- Autocomplete text suggestions
-- Interactive forms
+ - Animated graphics
+
+ - Photo slideshows
+
+ - Autocomplete text suggestions
+
+ - Interactive forms
 
 An even better way of understanding what JS does, is to think about certain web features you use every day and likely take for granted. Like when your Facebook timeline automatically updates on your screen or Google suggests search terms based on a few letters you’ve started typing. In both cases, that’s JS in action.
 

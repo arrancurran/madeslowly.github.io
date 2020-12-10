@@ -1,8 +1,8 @@
 ---
 layout: case-study
 categories: [ web design ]
-title:  New website for VeloVedic
-subtitle: Event booking website
+title:  New website
+subtitle: Event booking
 description: Clean, fast loading site to show case upcoming events with a backend database for customer bookings and payments. The site is designed to receive, present and store user input with a server database. A payment system based on the PayPal API allows user to complete bookings whilst never leaving the site. The site was developed using HTML, CSS, JavaScript and PhP.
 date: 2018-01-20
 # This is the image used in the post lists
@@ -33,10 +33,10 @@ colors:
 font: Armata
 ---
 
-# Overview
+## Overview
 
 Clean, fast loading site to show case upcoming events with a backend database for customer bookings and payments. The site is designed to receive, present and store user input with a server database. A payment system based on the PayPal API allows user to complete bookings whilst never leaving the site. The site was developed using HTML, CSS, JavaScript and PhP.
 
-# Techy stuff
+## Techy stuff
 
 velovedic.co.uk was developed using a CSS framework, <a href="https://getbootstrap.com/">Bootstrap</a>. Global components, like footers, topbars, etc, are managed using PhP. The bespoke booking system connects to <a href="https://developer.paypal.com/docs/checkout/">PayPal Checkout</a>, handling payments and a MySQL database records booking details. Animated effects where built with a combination of <a href="https://michalsnik.github.io/aos/">Animate On Scroll</a> and custom CSS.

@@ -1,7 +1,9 @@
+---
+---
 <?php
 /* Request feilds from _includes/quick-contact.html */
 // email to owner
-  $to = "arran@{{ site.url }}";
+  $to = "{{ site.author.email }}";
   $subject = "{{ site.url }} inquiry";
 
   $inquiryOption = $_REQUEST['inquiryOption'] ;

@@ -1,5 +1,6 @@
 ---
 layout: default
+
 ---
 <!-- single post layout -->
 
@@ -45,6 +46,10 @@ layout: default
 <section class="blog-content">
 
 {{ content }}
+
+{% if page.comments %}
+{% include disquis.html %}
+{% endif %}
 
 </section>
 

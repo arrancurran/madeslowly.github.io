@@ -13,6 +13,8 @@ thumbnail: fun-with-js-thumb.jpg
 nav: 'dark'
 
 func: drawOpticalTrapData
+
+comments: true
 ---
 <script src="https://cdn.jsdelivr.net/npm/p5"></script>
 

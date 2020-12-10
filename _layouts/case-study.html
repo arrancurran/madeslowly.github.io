@@ -5,6 +5,7 @@ layout: single-post
 
 {{ content }}
 
+{% if page.logos != null %}
 <h4>Branding</h4><hr>
 <section class="flex-display">
 {% for item in page.logos %}
@@ -13,7 +14,9 @@ layout: single-post
   alt="{{ page.directory }} {{ item }}">
 {% endfor %}
 </section>
+{% endif %}
 
+{% if page.icons != null %}
 <h4 class="blog-para">Iconography</h4><hr>
 <section class="flex-display">
 {% for item in page.icons %}
@@ -22,7 +25,9 @@ layout: single-post
   alt="{{ page.directory }} {{ item }}">
 {% endfor %}
 </section>
+{% endif %}
 
+{% if page.colors != null %}
 <h4 class="blog-para">Colour Scheme</h4><hr>
 <section class="flex-display">
 {% for item in page.colors %}
@@ -35,6 +40,7 @@ layout: single-post
   </svg>
 {% endfor %}
 </section>
+{% endif %}
 
 <h4 class="blog-para">Typography</h4><hr>
 <section class="flex-display">
