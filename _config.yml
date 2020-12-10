@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 # Build for production `JEKYLL_ENV=production jekyll b`
 
-title:               Made Fast
+title:               Made Slowly
 subtitle:            Custom websites designed in Oxford
 description:         >-
 
