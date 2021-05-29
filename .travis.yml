@@ -14,6 +14,7 @@ notifications:
     recipients:
     - arran@madeslowly.co.uk
     on_failure: always
+
 before_install:
 - openssl aes-256-cbc -K $encrypted_f355d508fe95_key -iv $encrypted_f355d508fe95_iv
   -in bluehost.enc -out /tmp/bluehost -d
@@ -28,5 +29,13 @@ script:
 - gem install bundler
 - bundle update
 - bundle install
+
+
+- JEKYLL_INFO=$(bundle list | grep jekyll)
+- THEME_INFO=$(bundle info slow-steps | grep slow-steps)
+
+- echo "jekyll_info: '$JEKYLL_INFO' \ntheme_info: '$THEME_INFO' " > _data/build.yml
+
+
 - JEKYLL_ENV=production bundle exec jekyll build
 - rsync -r -e ssh\ -i\ /tmp/bluehost $TRAVIS_BUILD_DIR/_site/ $bluehost_username@ydn.wpm.mybluehost.me:public_html/test
