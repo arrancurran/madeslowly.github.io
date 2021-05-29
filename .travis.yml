@@ -28,7 +28,7 @@ script:
 - bundle update
 - bundle install
 - JEKYLL_ENV=production bundle exec jekyll build
-- rsync -r -e ssh\ -i\ /tmp/bluehost /_site/ ydnwpmmy@ydn.wpm.mybluehost.me:public_html/test
+- rsync -r -e ssh\ -i\ /tmp/bluehost $TRAVIS_BUILD_DIR/_site/ ydnwpmmy@ydn.wpm.mybluehost.me:public_html/test
 # deploy:
 #   provider: script
 #   skip_cleanup: true
