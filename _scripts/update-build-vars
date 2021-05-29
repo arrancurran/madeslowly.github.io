@@ -1,0 +1,7 @@
+#!/bin/bash
+
+JEKYLL_INFO=$(bundle list | grep jekyll)
+
+THEME_INFO=$(bundle info slow-steps | grep slow-steps)
+
+echo "jekyll_info: '$JEKYLL_INFO' \ntheme_info: '$THEME_INFO' " > $TRAVIS_BUILD_DIR/_data/build.yml

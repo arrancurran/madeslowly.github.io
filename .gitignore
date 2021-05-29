@@ -10,8 +10,6 @@ Gemfile.lock
 
 *.DS_Store
 
-_scripts
-
 /assets/_dev
 
 notes.md
