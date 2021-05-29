@@ -10,7 +10,6 @@ Gemfile.lock
 
 _scripts
 
-
 /assets/_dev
+
 notes.md
-node_modules
