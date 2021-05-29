@@ -16,3 +16,5 @@ gem "jekyll-paginate"
 gem "jekyll-autoprefixer"
 gem "jekyll-sitemap"
 gem "jekyll-target-blank"
+
+gem "execjs", "2.7.0" # Temporary downgrade to avoid https://github.com/ai/autoprefixer-rails/issues/203 before a proper fix is out there
