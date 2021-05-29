@@ -20,6 +20,10 @@ before_install:
 - eval "$(ssh-agent -s)"
 - chmod 600 /tmp/bluehost
 - ssh-add /tmp/bluehost
+
+addons:
+  ssh_known_hosts: ydn.wpm.mybluehost.me
+
 script:
 - bundle update
 - bundle install
