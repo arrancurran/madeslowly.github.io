@@ -1,18 +1,33 @@
+os: linux
+arch: arm64-graviton2
+group: edge
 language: ruby
 cache: bundler
+gemfile: Gemfile
 branches:
   only:
-  - release
+  - master
+rvm:
+- 2.6
+
+notifications:
+  email:
+    recipients:
+    - arran@madeslowly.co.uk
+    on_failure: always
+
+before_install:
+- openssl aes-256-cbc -K $encrypted_f355d508fe95_key -iv $encrypted_f355d508fe95_iv
+  -in bluehost.enc -out ~\/.ssh/bluehost -d
+
 script:
-  - JEKYLL_ENV=production bundle exec jekyll build --destination site
+  - bundle update
+  - bundle install
+  - JEKYLL_ENV=production bundle exec jekyll build
+
 deploy:
-  provider: pages
-  local-dir: ./site
-  target-branch: master
-  email: deploy@travis-ci.org
-  name: Deployment Bot
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN
-  keep-history: true
+  provider: script
+  skip_cleanup: true
+  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/_site/ ydnwpmmy@ydn.wpm.mybluehost.me:public_html/test
   on:
-    branch: release
+    branch: master
