@@ -24,9 +24,10 @@ script:
 - bundle update
 - bundle install
 - JEKYLL_ENV=production bundle exec jekyll build
-deploy:
-  provider: script
-  skip_cleanup: true
-  script: rsync -r -e ssh\ -i\ /tmp/bluehost /_site/ ydnwpmmy@ydn.wpm.mybluehost.me:public_html/test
-  on:
-    branch: master
+- rsync -r -e ssh\ -i\ /tmp/bluehost /_site/ ydnwpmmy@ydn.wpm.mybluehost.me:public_html/test
+# deploy:
+#   provider: script
+#   skip_cleanup: true
+#   script: rsync -r -e ssh\ -i\ /tmp/bluehost /_site/ ydnwpmmy@ydn.wpm.mybluehost.me:public_html/test
+#   on:
+#     branch: master
