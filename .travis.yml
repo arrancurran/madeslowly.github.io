@@ -22,11 +22,11 @@ before_install:
 - ssh-add /tmp/bluehost
 
 addons:
-  ssh_known_hosts: $bluehost_domain
+  ssh_known_hosts: ydn.wpm.mybluehost.me
 
 script:
 - gem install bundler
 - bundle update
 - bundle install
 - JEKYLL_ENV=production bundle exec jekyll build
-- rsync -r -e ssh\ -i\ /tmp/bluehost $TRAVIS_BUILD_DIR/_site/ $bluehost_username@$bluehost_domain:public_html/test
+- rsync -r -e ssh\ -i\ /tmp/bluehost $TRAVIS_BUILD_DIR/_site/ $bluehost_username@ydn.wpm.mybluehost.me:public_html/test
