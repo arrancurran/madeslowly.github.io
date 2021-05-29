@@ -1,11 +1,16 @@
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
-.DS_Store
-.htaccess
-/assets/dev
-notes.md
-node_modules
+_site
+
+.jekyll-cache
+
+.sass-cache
 
 Gemfile.lock
+
+*.DS_Store
+
+_scripts
+
+
+/assets/_dev
+notes.md
+node_modules

@@ -57,12 +57,9 @@ google:
 exclude:
   - notes.md
   - README.md
-  - Gemfile
-  - assets/dev
   - node_modules
   - package-lock.json
-  - deploy-key
-  - deploy-key.pub
+
 
 markdown: kramdown
 highlighter: rouge
