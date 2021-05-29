@@ -25,6 +25,7 @@ addons:
   ssh_known_hosts: ydn.wpm.mybluehost.me
 
 script:
+- gem install bundler
 - bundle update
 - bundle install
 - JEKYLL_ENV=production bundle exec jekyll build
