@@ -9,24 +9,21 @@ branches:
   - master
 rvm:
 - 2.6
-
 notifications:
   email:
     recipients:
     - arran@madeslowly.co.uk
     on_failure: always
-
 before_install:
-- openssl aes-256-cbc -K $encrypted_f355d508fe95_key -iv $encrypted_f355d508fe95_iv -in bluehost.enc -out /tmp/bluehost -d
+- openssl aes-256-cbc -K $encrypted_f355d508fe95_key -iv $encrypted_f355d508fe95_iv
+  -in bluehost.enc -out ~\/.ssh/bluehost -d
 - eval "$(ssh-agent -s)"
-- chmod 600 /tmp/bluehost
-- ssh-add /tmp/bluehost
-
+- chmod 600 /.ssh/bluehost
+- ssh-add /.ssh/bluehost
 script:
-  - bundle update
-  - bundle install
-  - JEKYLL_ENV=production bundle exec jekyll build
-
+- bundle update
+- bundle install
+- JEKYLL_ENV=production bundle exec jekyll build
 deploy:
   provider: script
   skip_cleanup: true
