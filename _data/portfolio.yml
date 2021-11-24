@@ -1,7 +1,7 @@
 - name: Wheels For All
   category: Accessible Cycling Group
   strap: wordpress | custom theme | booking system
-  description: IN DEVELOPMENT - Oxford based group providing inclusive cycling facilities for everbody, in a safe and supportive environment.
+  description: Oxford based group providing inclusive cycling facilities for everbody, in a safe and supportive environment.
   screenshot: wfa/home-screenshot.jpg
   url: https://wfa.slowdev.co.uk/
   technologies:
