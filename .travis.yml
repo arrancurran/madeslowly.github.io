@@ -31,4 +31,4 @@ script:
 - bundle install
 - bash _scripts/update-build-vars
 - JEKYLL_ENV=production bundle exec jekyll build --trace
-- rsync -r -e ssh\ -i\ /tmp/bluehost $TRAVIS_BUILD_DIR/_site/ $bluehost_username@ydn.wpm.mybluehost.me:public_html/test
+- rsync -r -e ssh\ -i\ /tmp/bluehost $TRAVIS_BUILD_DIR/_site/ $bluehost_username@ydn.wpm.mybluehost.me:public_html/madeslowly.co.uk
