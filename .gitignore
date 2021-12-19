@@ -1,15 +1,5 @@
 _site
 
-.jekyll-cache
-
-.sass-cache
-
-.sass-lint.yml
-
-Gemfile.lock
-
-*.DS_Store
-
 /assets/_dev
 
 notes.md
